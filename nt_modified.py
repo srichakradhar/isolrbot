@@ -29,7 +29,7 @@ class sequence_word_prediction:
 #        self.Xtrain = Xtrain
 #        self.Ytrain = Ytrain
     def Preprocessing(self):
-        with open('./iSOLAR1.csv', 'r') as content_file:
+        with open('./iSOLAR.csv', 'r') as content_file:
             content = content_file.read()
         content2 = " ".join("".join([" " if ch in string.punctuation else ch for ch in content]).split())
     # Tokenize content2

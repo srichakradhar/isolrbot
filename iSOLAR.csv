@@ -1,0 +1,1254 @@
+Product/s,Application/s,Component/s,Region(s),"Measures, Solutions & Updates",Summary,Description,Customer/s
+BTN8962TA,None,,JAPAN,thanks,"application note, rev 0.6, p.77, figure 83","ANDEN thinks the dotted color is NOT orange.  It appears purple.  Is ANDEN understanding correct?_x000D_
+If their understanding is correct, would you correct it in the next version of the ap note?_x000D_
+",ZF
+BTN8962TA,None,,JAPAN,thanks,"application note, rev 0.6, p.77, figure 83",ANDEN thinks tdr must be a typo.  it should be tdf.  is ANDEN understanding correct?,DENSO
+BTN8962TA,None,,JAPAN,thanks,"Application Note Rev 0.6 p.77, Figure 83, typo?","See attached picutre, ANDEN thinks tdr is a typo and it should be tdf.",CONTINENTAL
+TLE4941-1CTLE4941CTLE4941PLUSCTLE5041PLUSCTLE5046IC-AK-ERR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"You can answer to the customer that TLE5046iC and also the other speed sensors you mentioned do not have any specific higher risk of failure at a certain frequency, all the frequencies are equally safe.",The failure frequency,"Sumitomo has new question._x000D_
+_x000D_
+Now they are re considering their verification plan and encoder frequency for verification._x000D_
+They would like to know if there's any specific frequency which has potential failure of output behavior._x000D_
+(For example, TLE5046iC datasheet describes input frequency spec as 0Hz-3000Hz.But specific 1500Hz-1600Hz area have possibility of potential failure, they would like to know and they need to add their test for above frequency range)_x000D_
+_x000D_
+And they need to know this information for all product which they have used ever since. (TLE5046-AK-ERR, TLE5041plusC, TLE4941plusC, TLE4941C, TLE4941-1C)_x000D_
+_x000D_
+I think there's no such weak frequency area, and there's no potential failure which depends on such input frequency._x000D_
+Is this correct?_x000D_
+If so, I would like to answer them ""No"" and close this topic._x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+ _x000D_
+",DENSO
+BTS7004-1EPP,ATV_BODY_POWER_DISTRIBUTION,,JAPAN,See attached file,Rds(ON) characteristics by load current,"customer requests to show Rds(ON) characteristics by load current._x000D_
+The fixed temperature and Vs (eg, room and Vs=13.5V) is OK._x000D_
+Please provide Rds(on) vs characterization data.  ",CONTINENTAL
+BTN8982TA,None,,JAPAN,,Expected voltages if the Ris is open as a failure situation,"Two questions:_x000D_
+A)	If the Ris is open as a failure situation, how much voltage they have to assume as the worst case?_x000D_
+In the datasheet, the max rating of the IS pin is from -20V to 40V.  Therefore, do they have to assume it from -20V to 40V?_x000D_
+_x000D_
+B)	If they should protect the uC pin, what do you recommend?_x000D_
+Do you recommend to put an appropriate Zener diode between the GND and IS line?_x000D_
+_x000D_
+The application is PTG.",ARROW
+TLE5046IC-AK-ERRTLE5046IC-PWM-R050,None,,EMEA,Solved to remove it from Open tickets,"TEST, PLEASE IGNORE! - Visibiltiy extension to account team",TEst of visibility for account team,DABO
+TLE4955C_E4807,ATV_BODY_DASHBOARD,,EMEA,Solved to remove it from Open tickets,"TEST, PLEASE IGNORE! - Example of iSOLAR ticket",This is an example of description for an iSOLAR ticket,AVNET
+SAK-TC233L-32F200F_ABTLE4921-5UTLE4929C-XAN-M28TLE4989CTLE5028C-XAA-D28TLE5028C-XBA-D28TLE5028CB-XAN-D28TLE5309D_E1211TLE5309D_E2211TLE5309D_E5201TLE9268-2QX,None,,EMEA,measures Solutions 2,EFI-test 1 by it please ignore,"test 1 by it please ignore_x000D_
+updated1",ZF
+TLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"From our design description:_x000D_
+_x000D_
+The algorithm used for direction detection exploits the systematic 90° phase shift between speed and direction paths obtained by a monocell and counteracts the susceptibility of the same GMR monocell to temperature drifts by special bias in case of small signals. Two direction detection modes are implemented:_x000D_
+- Mono mode: for large signals, prevents signal distortion with large pitch_x000D_
+- Pseudo differential mode: for small signals, increase stray field rejection and signal to noise ratio_x000D_
+The selection of direction detection mode is done dynamically and the concept is therefore called “Hybrid”._x000D_
+_x000D_
+The extended pole wheel pitch range, in conjunction with large airgaps required in application, poses a serious challenge for direction detection._x000D_
+The monocell approach is extremely sensitive to thermal drifts and GMR R0 drift over lifetime: the product performances can not be achieved for Bx<1mT where non-idealities dominate the signal behavior._x000D_
+For this reason a hybrid concept is introduced: the ASIC can also bias the direction GMR with a current proportional to the current flowing in the whole bridge speed obtaining a pseudo differential behavior with suppression of common mode signals like stray fields and thermal drifts of R0._x000D_
+_x000D_
+The advantages are:_x000D_
+- A differential behavior is generated, capable of suppressing stray fields and R0 drifts due to temperature/aging effect_x000D_
+- The direction detection can also work with very low field as required by application_x000D_
+_x000D_
+The disadvantages are:_x000D_
+- For large fields, the direction signal gets largely distorted and can create additional local minima with very small signal at speed zero crossing and impact on safety concept_x000D_
+- The direction signal gets an amplitude reduction with increasing pole wheel pitches._x000D_
+_x000D_
+For the above considerations, the following hybrid approach is introduced:_x000D_
+- Direction detection is by default set at pseudo differential mode after reset_x000D_
+- Direction detection switches to monocell mode if speed signal exceeds a predetermined threshold or if mono mode is detected in valid microbreak_x000D_
+- The pseudo differential mode can be restored by a signal watchdog",pseudo-diff to mono mode switch explanation,"Could you please help to explain the switching behavior from normal mode to mono mode?_x000D_
+ (Previously, patricia and you show me the brief method and explained to me when it changes)_x000D_
+ I hope to review by myself again, so if you have any slide, it's helpful to share it to me._x000D_
+_x000D_
+I will not show to customer, I only use for my understanding._x000D_
+",NONE
+BTN8962TA,None,,JAPAN,thanks,dI/dt (short circuit situation) based on the Rsr value,"BTN8962TA can adjust the switching speed by Rsr value.  _x000D_
+_x000D_
+The question is..._x000D_
+How about the dI/dt, when a short circuit situation happens?_x000D_
+Is dI/dt also “adjusted” (changed)?_x000D_
+_x000D_
+If you have short circuit current plots with several kinds of Rsr values, would you provide the plots?_x000D_
+_x000D_
+Mitsuba, PTG_x000D_
+_x000D_
+Answer:_x000D_
+1. The slew rate resistance gives only minor effect on dI/dt, when short circuit happens._x000D_
+2. The inductance of the short circuit wire has major effect on dI/dt, when short circuit happens._x000D_
+3. The measurement results based on one device are attached._x000D_
+",AVNET
+TLE5046IC-PWM-R050TLE5046IC-PWM-R100TLE5046IC-PWME-R050TLE5046IC-PWME-R100,None,,KOREA,"See attached Powerpoint and Visio file for solution._x000D_
+_x000D_
+As discussed, with some rerouting of existing signals and using few spare parts (extra logic gates already available in the silicon), we managed to change the priority between standstill and warning pulse. Technically, this has been made according to the drawing of the pptx. If more details are needed do not hesitate to ask again. ",TLE5046iC-PWM metal fix block diagrams for customer explanation.,Customer wants to know which parts will be changed to remove the warning pulse in standstill situation. ,ZF
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"[1] Check picture in page 2. When the wheel is moving, at each speed event the temperature is measured and the delta from the previous sample is calculated. If this delta is too big, then the temperature watchdog is triggered. When we are in standstill, at each standstill event the temperature is sampled and the delta from the last speed event is calculated (see the figure). If the delta is too big, then the temperature watchdog is triggered_x000D_
+_x000D_
+[2] At high temperature (T > 150°C), the offset drift due to temperature change is much bigger than in normal operating temperatures, hence the threshold on the deltaT is smaller for T > 150°C. For this reason we made this difference in the concept._x000D_
+_x000D_
+[3] I checked the VHDL_x000D_
+- The condition on the temperature is ""bigger than"" -> 150 is in the column on the left_x000D_
+- The condition on the field is ""smaller than"" -> 4.15 (corresponding to 96*dBlimit, this is coded in VHDL) is in the last row ",Temperature Watchdog questions from Denso,"Denso has some questions about Tmperature watchdog._x000D_
+First I explained Temperature Wd detail by using attachment which you prepared before._x000D_
+And they came up with some questions._x000D_
+_x000D_
+Could you please help to qularify the answer?_x000D_
+_x000D_
+[1]They understood IC monitors temperature change during standstill and if it excesses the the threshold, watchdog activates._x000D_
+They have question that during normal operation, IC monitors temperatue change between 2 magnetic periodical signals and if sudden huge temperature change occurs during 2 signals, the watchdog activates?_x000D_
+Or watchdog only activates during standstill mode?_x000D_
+_x000D_
+--> I recognize the answer is former._x000D_
+    During normal operation, if such huge temperature change occurs, watchdog activates. But if temperature change is within threshold and next input signal comes, IC adjust the offset everytime._x000D_
+Is my recognition correct?_x000D_
+_x000D_
+[2]Please refer to page6._x000D_
+ They would like to know why the threshold value is different between ""T<150degC"" and ""T>150degC"" cases._x000D_
+_x000D_
+--> Can you make simple sentense why this is different?_x000D_
+_x000D_
+[3]Also please refer to page6._x000D_
+■Temperature T <150degC or T > 150degC_x000D_
+Which zone is ""150degC"" included in?_x000D_
+_x000D_
+■Bx amplitude, <4.15 or >4.15_x000D_
+Which zone is ""4.15"" included in?_x000D_
+_x000D_
+--> Can you clarify this point to check the digital circuit description?_x000D_
+     (I assume this depends on VHDL description)_x000D_
+",CONTINENTAL
+TLE5501_E0002,ATV_SAFETY_DRIVER_ASSISTANCE_SYSTEMS,,JAPAN,"Hi Takamitsu,_x000D_
+_x000D_
+we will have M8 by end of this month, so QS are available._x000D_
+_x000D_
+The T-drift data for one-point and onging calibration are in attached slides.",TLE5501 evaluation for JTEKT EPS MPS ,"Hello _x000D_
+_x000D_
+Regarding TLE5501 products, _x000D_
+JTEKT requested the following 2 items. _x000D_
+_x000D_
+I believe that the status of TLE5501 is QS. (SOP : July 2018)_x000D_
+_x000D_
+1. TLE5501 PDS_x000D_
+I believe that the status of TLE5501 is QS now, so we can provide it to customer._x000D_
+_x000D_
+2. TLE5501 temp drift data_x000D_
+TMR has best stability of over Temperature._x000D_
+JTEKT requests us to provide the comparison data for ideal compensation vs. 1 point calibration. _x000D_
+_x000D_
+Would you please provide the above data by middle of April (16-Apr)?_x000D_
+_x000D_
+Best Regards,_x000D_
+T. Kondo _x000D_
+",DENSO
+TLE5046IC-AK-LR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"I spoke with Rene. In our lab we do not use oscilloscope to measure the jitter, we have a dedicated setup using a FPGA to acquire data and measure the period of each pole pair._x000D_
+_x000D_
+What we do is the following:_x000D_
+-we measure the period for each pole pair (period = time between two North/South switching events or two South/North switching events)_x000D_
+-we repeat the measurements N times (the wheel rotates N time, usually N = 100)_x000D_
+-we calculate the standard deviation of the period for each pole pair over the N measurements. _x000D_
+-in this way, for each pole pair we have the jitter of the corresponding period_x000D_
+-we average those values obtaining only one jitter value for a certain airgap and Y offset_x000D_
+_x000D_
+Suggestion for the customer is to send us the encoder wheel to generate a wheel mapping. With the oscilloscope the measurements obtained would not be really reliable, in our experience. ",The methold to maeasure the jitter,"HondaLock has question._x000D_
+_x000D_
+Now they are trying to measure the jitter in their side._x000D_
+pleae check attached picture._x000D_
+_x000D_
+1 period is 2 output pulse._x000D_
+So they want to trigerr 1st output pulse and measure the jitter for 3rd output pulse by using oscilloscope._x000D_
+_x000D_
+But if they use osiclloscope, it detects every Ihigh current pulse, so oscilloscope detects the jitter of 2nd output pulse._x000D_
+_x000D_
+They hope our advice how we measure the jitter per 1 period._x000D_
+I beleive your have prepared jitter measureing system in your lab._x000D_
+(So always recommend customer to provide their encode wheel, if we get it,_x000D_
+we can generate jitter and airgap map)_x000D_
+_x000D_
+Do you have any good advice for HondaLock?_x000D_
+_x000D_
+_x000D_
+",CONTINENTAL
+TLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"I spoke with the analog designers and got the solution for this ticket._x000D_
+_x000D_
+The old definition of -22V is only valid in combination with a certain value of the external resistor. In reverse the chip is like a diode: e.g. 1V voltage drop over the chip 21V across the resistor._x000D_
+_x000D_
+This is why we specify the max. reverse current in the data sheet (-200mA for 4hours). There should be no difference between the TLE4941 and the TLE5045/46 regarding reverse polarity._x000D_
+_x000D_
+",Reverse Polarity Voltage,"Denso has question._x000D_
+_x000D_
+There's ""Reverse polarity voltage"" spec for TLE4941plusC (Min -22V)_x000D_
+But there's no such spec for TLE5046iC._x000D_
+_x000D_
+If TLE5046iC also has the spec, they need to know that value._x000D_
+If TLE5046iC doesn't need to care about reverse polarity voltage,_x000D_
+they need to know the reason._x000D_
+_x000D_
+Could you please give me your comment?_x000D_
+",
+TLE94110EL,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,"ERAE Automotive Systems has made a decision to split the 2 companies as Thermal and  Elec businesses.
+There will be no change of company name, address and payment term for Thermal business.
+Furthermore, there will be no other changes for Elec business only except for company name(ERAE Automotive System -> ERAE AMS) 
+",ERAE signed joint company with China CASC for air conditioning biz,"ERAE air-conditioning biz division will joint with China CASC for air-conditioning business and expecting official release joint company time frame is March or April 2017.
+It will be cross regional business case in near future. Still not yet fixed ERAE internally how to allocate factory and R&D resources.",ZF
+IPZ40N04S5-3R1,ATV_CHASSIS_ABS/BRAKING,,AP,"One difficulty is Zthja for 100ms is not available. Based on Zthja of D-pak, just Zthja of the device assumpted and Tj is estimated. The customer will test it.",EPB motor stall condition,EPB motor could bee stalled and MosFET should sustain such a high stall current during 100ms. ST VNH7013(4 of FET dies in one package) had tested under the condition but it was failed. IPZ40N04S5-31 is promoted.,DENSO
+IPB180P04P4L-02,ATV_CHASSIS_ABS/BRAKING,,AP,,Relay MosFET failure of IMEB,"During T-car test, e-Relay MosFETs were failued. The customer wanted to know a possible failure modes.",ARROW
+TLE8261E,ATV_BODY_LIGHTING,,AP,"TLE8261E copper version [changes of PCN 2014-060-A] is no longer support SBC factory flash mode. Work Around need be implimented according to new PCN 2015-126-A. After impliment Work Around #2, the module can be sucessfully programmed.",TLE8261 Factory flash mode failed on End of Product line of JABIL,TLE8261 Factory flash mode failed on End of Product line of JABIL Guangzhou Site. Project is for VALEO C344 PHEV charger indicator. RO reset pin of TLE8261 is kept in 0V in the test.,NONE
+TLE9263QX,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,"ESD cap on the board are changed from 47nF to 100nF and ESD discharging gap are designed on new board. Furthermore, A very likely reason for the HS shutdown is that there will be an inverse current flowing into the HS switch during the ESD pulse because V_HSx > VSHS.  HS switch will not be destroyed but it will shutdown and it will signalize overcurrent.",TLE9263 HSx channels failed in 25kV air discharging ESD test,TLE9263 HSx channels failed in 25kV air discharging ESD test. All the HSx output switch off in the test.,DENSO
+SP400-11-00,NONE,,AP,"testing isolar system , no Actual ticket",Simple concept for TPMS APS test bench,Simple concept for TPMS APS test bench,CONTINENTAL
+TLE7183QU,ATV_CHASSIS_STEERING,,AP,provide mission profile,MDPS ISO26262 Project - TLE7183QU,"Mobis decide to use TLE7183QU for TM-CAR. 
+ <Customer requests> 
+  - Circuit design review 
+  - Need to check the ECU mission profile for the TLE7183QU",ARROW
+IPD90N10S4-06,ATV_PWT_ENGINE_MANAGEMENT,,AP,,48V DC-DC Converter,48V DC-DC converter has multiphase configulation. Customer considers verious number of phases. These slides show MosFET loss range over 6phase to 12phase.,DABO
+TLE7183QU,ATV_CHASSIS_STEERING,,AP,"Root cause is wire bond process problem. 
+Molding process update",TLE7183QU Relay off issue.,"EPS Field failure issue - EPS Main relay off.
+Main reason is TLE7183QU ERR report to MCU, MCU Relay off.
+so, test with customer and found out that when all IHx input ""on"" only GH2 output is not working. 
+==>QM report : SL2&GH2 is short.
+Reference : 800119855020",AVNET
+BTT50085-1TMABTT6020-1EKABTT6050-2EKA,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,use  ISO load current for estimation based on Rthjs.,AUIRFP4110 Failure Analysis at HV DCDC converter,"customer want to confirm the bondwire current capacity for safe reason about 3 components,BTT6050-2EKA, BTT6020-1EKA, BTS50085-1TMA.",ZF
+TDA5235,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,please refer attachment,TDA5235 Receiver does not response to keyfob’s press,"Preliminary observation,
+–Glitch appear when TDA5235 Receiver does not response to keyfob’s press
+–However, Glitch also appear when TDA5235 Receiver does response to keyfob’s press.
+–Glitch is not always found on the same application board.
+›Root cause of glitch can be signal cross coupling on application board or SW application or TDA5235.",DENSO
+TLE7244SL,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,,TLE7244SL oscillator frequency and tolerance,Request from customer to provide the internal oscillator frequency and tolerance for the TLE7244SL. Customer requires this information to analyse the possible causes of EMC on their PCB.,CONTINENTAL
+TLE8888QK,NONE,,AP,*,Overcurrent detection mechanism,TLE8888 has a overcurrent detection function on low side switch channel. and it's a little complicated. it has a filtering timer and threshold on current level to trigger the OC protection . I draw a picture to explain the functionality.,ARROW
+TLF35584QVVS2,ATV_CHASSIS_STEERING,,AP,provide test report,TLF35584 CE&RE test 400kHz operation (with/without Pi-filter),"Customer requested cost effective solution for TLF35584 Pi-filter.
+Test condition
+–Conducted and radiated Emission test
+–400kHz operation mode
+–with and without spread spectrum (6% FM)
+–Different input filter setups
+–Influence of capacitor type
+–Influence of electrical shielded Inductor",DABO
+TLE7189FTLE7189QU,ATV_CHASSIS_STEERING,,AP,we prepared a excel sheet for customer to calculate the current consumption of TLE7189,current consumption check for TLE7189,This BOSCH JV called BOSCH Huayu in China. It's EPS project in development. Customer want to  check with us about the current consumption of TLE7189.,AVNET
+TLE9868QXB20,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,"This failure comes from the infineon Back-end test. The new released test program had configure the 100TP program counter to 0xFF, which should be 0x00",100TP write failure,"Bosch can download their code to flash, but if they write the PCB version code to the 100TP, it will generate an error.",ZF
+IPD90N10S4-06,ATV_PWT_ELECTRIC_DRIVE_TRAIN,,AP,The failure mode was analyzed and new FET and gate driver was promoted.,Gate false trigger by CdV/dt at 48V DC-DC,"Using AUIRFR3114Z and AUIRS2181S, switching MosFET on 48V DC-DC were heated up even at low load. This failure mode seems to be false gate trigger by high CdV/dt.",DENSO
+TLE6288R,NONE,,AP,0,TLE6288 wrong configuration,in slides,CONTINENTAL
+TLF35584QVVS2,ATV_CHASSIS_STEERING,,AP,"Main problem : customer was changed buck output capacitor cheper than before used capacitor.
+The ESR value @-40deg C : old one 3ohm, new one 12ohm.
+voltage ripple was increased.",-40deg C Cold temperature Buck output OV issue.,TLF35584 Pre-regulator buck OV issue during cold temperature test.,ARROW
+TLE4470G,ATV_BODY_LIGHTING,,AP,LOT product failure issue,TLE4470G field failure issue (Q1 output OV),"Failure case : abnormal Q1 output 6.xxV (ref. Q1 output voltage : 5v)
+
+- Customer failure symptom is strange; Failure symptom was disappeared after some handling like de-soldering or multi-measurement. Infineon AE confirmed customer symptom, but it disappeared during further electrical measurement.
+- All FA samples showed same parameter drift out of Infineon internal limit, but it is still within spec. FA samples are still rejected at ATE test by parameter drift out although customer failure is disappeared.",DABO
+IPB50N10S3L-16,ATV_PWT_ELECTRIC_DRIVE_TRAIN,,AP,,Field winding for 48V BSG Inverter,48V BSG use clawpole motor and the motor has a winding on stator. The winding current on the stator will be managed by PWM. The attached explans the application and it shows IFX soution.,AVNET
+IPD90N10S4-06,ATV_PWT_ENGINE_MANAGEMENT,,AP,,MosFET Failure by Surge voltage on 48V DC-DC Converter,"During field test, FETs were damaged. The possible cause is guessed as a surge voltage from outside of DC-DC converter. The converter is connected to 48V starter-generator and an unconroled issue from the start-generator can cause a surge voltage into DC-DC converter.",ZF
+TLE7182EM,ATV_CHASSIS_ABS/BRAKING_PARK_BRAKE,,AP,"Need to change external DGND and PGND connection. 
+Customer must connect DGND and PGND on PCB.",TLE7182EM Failure issue(DGND and PGND separated issue),"The TLE7182EM had been destroyed after durability test.
+They use our TLE7182EM x 2 for EPB.
+But one of TLE7182EM destroyed after test.
+the destroyed TLE7182EM GND is not followed our guide.
+they use separated GND for DGND vs PGND.",DENSO
+IPLU300N04S4-1R1,ATV_CHASSIS_ABS/BRAKING,,AP,"This is more related with DC-DC system issue. Unstable output during transient period makes this idea's implementation. As a braking application, this idea may not good. ",Boost for AEB,"AEB(Autonamous emergengy braking) requires a higher braking torque. To respond the higher braking, a higher supply voltage should be supplied. The boost conver should supply instantly a required higher voltage from 12V.",CONTINENTAL
+TLE7182EM,ATV_CHASSIS_ABS/BRAKING_PARK_BRAKE,,AP,provide detail information.,TLE7182EM Failure issue.,"When Error condition, TLE7182EM report ERR pin low.
+But, customer want to know which error condition UV_Shutdown or SCD.
+They requested detail information about it.",ARROW
+TLE8242-2L,NONE,,AP,*,Unstability of current control loop,"Customer used our TLE8242-2L to driver solenoid and found the current is not stable. After checking on site, we found the KP/KI parameters are not right determined. I calculated the right range of  KP/KI according to the load impedance and solved it.",DABO
+IPC100N04S4-02,ATV_CHASSIS_ABS/BRAKING,,AP,"modeling and simulation was done for loss estimation. But it is difficult to estimate Tj because Zthja is not available. However, generally, Zthja may be similar as Zthja under 500us. So, as far as the test time is below 500us, this simulation may be affective. The customer will test on her board and compare the short current waveform to check the model's accuracy.",EPB motor short current,"One of failure modes of EPB motor is internal short of the motor. During short current will flow through high side FET, the customer wants to estimate how long time could the FET survive? From 12V battery to the motor, the impedance was estimated and modeled into electical system for simulation.",AVNET
+TLE7184F,NONE,,AP,"Internally between Gate (GHx/GLx) and Source (SHx/SLx) there is only an
+NMOS to discharge the gate of the external MOSFET. Depending of the charge on the gate the NMOS can have different
+(undefinable) output characteristic. The charge of the gate is not predictable as it depends on when the device
+was powered on the last time, temperature, small lot differences, etc.
+Thus it is not possible to specify the “resistance” of the NMOS
+Measurement of the resistance in the ICT is not possible",Customer reported ICT test fail on TLE7184F,"Customer reported ICT test fail on TLE7184F.after checking with customer, I found they use wrong test setup on this functions. After discussion with customer, they accepted to change the test setup.",ZF
+TLE8888QK,NONE,,AP,*,Variable Reluctance Sensor 4 detection modes,"TLE8888 has a VRS interface, which can be configured as auto/manual mode, even could support HALL sensor. attached document explained the detailed functionality.",DENSO
+IPC90N04S5L-3R3,ATV_CHASSIS_ABS/BRAKING,,AP,New proposal for cost reduction based on performance engineering was accepted and it will compete competitors.,Valve high side driver for MEB5,"As replacement of the current MosFET, TDSON-8 is compared to D-pak.",CONTINENTAL
+TLE8242-2L,NONE,,AP,*,TLE8242 control loop,TLE8242 has internal PI controller and it maybe has stability issue depending on parameters determined. The attached give a error analysis in theory.,ARROW
+IPC100N04S5L-1R5IPD60N10S4L-12IPD90N06S4-07IPD90N08S4-05,ATV_PWT_ENGINE_MANAGEMENT,,AP,"As per the recommandation, the customer made new PCB board and the output ripple was daramatically reduced.",48V DC-DC converter ouput ripple issue,The end customer's ouptut ripple of the 48V DC-DC converter is 1Vpk-pk but the customer's board has max. 5V peak to peak output ripple. This report shows the reason why the board has so high output ripple and how to resolve it.,DABO
+TLE9180-21QK,ATV_CHASSIS_ABS/BRAKING,,AP,,TLE9180 SCD issue.(DT setting issue),"Customer have SCD, because of too low DT time setting.
+They use S/W DT below 1us. 
+our DT time recommend over 1us.
+They requested Test for HW DT vs SW DT.",AVNET
+BTS5482SF,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,Update: Detection of the 150mA front LED outage is not possible. The max sense leakage current is 70uA which corresponds to a load current of ~ 483mA. It is not possible to differentiate between the sense leakage current and a front LED outage.,Bulb / LED outage detection - Channel 0 BTS5482SF,"Channel 0 of BTS5482SF controls the left front and rear turn signal. The customer is moving to an LED front turn signal and would like to know if diagnosis of a bulb outage is still possible for both front and rear turn signals. This diagnosis is necessary meet the n-1 statutory requirements.
+The loads are 
+- Rear bulb 21W
+- Side LED 30mA
+- Front LED 150mA.",ZF
+BTN8980TA,NONE,,AP,0,BTN8980TA vs. MC33981,Fighting guide between BTN8980TA and MC33981.,DENSO
+TLE8888QK,NONE,,AP,*,TLE8888 application Q/A,"Q#1: CAN wake up功能是否只受CANWKEN pin控制？ 
+Q#2: After run时候会发生power down的现象如何解释？
+Q#3:运行图operation state diagram的解释
+Q#4: WWD,FWD的配置图",CONTINENTAL
+TLE7183QU,ATV_CHASSIS_STEERING,,AP,,TLE7183QU abnomal GH1 output delay behavor during pwm control.,"EPS Field failure issue.
+TLE7183QU abnormal GH1 output delay behavior during PWM control.
+1. QM Report (NTF) => Return customer : same malfunction behavior 
+2. NTF device Test with customer : malfunction behavior confirmed
+3. QM Report (NTF) => Requested retest using customer test condition.
+4. QM Report (Confirmed)",ARROW
+AUIRF2804S,ATV_CHASSIS_ABS/BRAKING,,AP,This quality issue was come down.,AUIRF2804S design review due to the customer's in-line failure,"At hot chamber, the customer's design review was requested and thermal performance was estimated.",DABO
+TLE8718SA,NONE,,AP,"checked with customer's access register code. It seems stage de-activated. I suggested customer try after WR_START, read DIAREG6, and ensure set DIAREG6.MSC_MON bit.  it works!",Solve TLE8718SA's MSC failure,"Can not access OUT1516, OUTREG_ODD, OUTREG_EVEN",AVNET
+BTN8980TA,NONE,,AP,"The NovalithIC family has a EMI problem at the IS-pin.
+",Report of BTN8980TA EMC issue in Keboda,"The EMC interference to BTN8980 will make the accuracy of current sense worse if HF is entering the OUT-pin of the device, which mainly occurs, when output wire length is longer. Less than 10cm is strongly recommended.",ZF
+HIG-GBD1,ATV_PWT_ELECTRIC_DRIVE_TRAIN,,AP,,Blow pump cusotmer has no experiment of Inverter with IGBT,"customer has no experiment for temp sensor of IGBT (NTC)
+provided NTC explanation and characterisitics which one is used in HIG-GBD1",DENSO
+TLE8718SA,ATV_PWT_ENGINE_MANAGEMENT,,AP,"for Long term, TIER should change wiring to use CH16 in parallel or change H/W. for short therm screening process needed --> closed",SCB happens at CH15 in TLE8718SA,"In AUTRON GDI plaform, field return happens in immo configuration. no same fault in non-immo configuration.",CONTINENTAL
+TLE4921-5U,ATV_BODY_DASHBOARD,,AP,"Issue related to high energy pulses coming from battery line. Increasing resistance in such a case will be of no use. Since the 24V diode also input line with power rating of 200mW is not burning, customer has been suggested to upgrade capacitor packages to 1206/1210 and reduce resistance value back to 200Ohm. 
+
+",Input series resistor burn-out,"TT electronics has some sensors returned from field with burnt series resistors both at input and output. In the past, they would replace with a higher resistance. But they still have same issue. As of now, input resistor value is 560Ohm and resistor at output is 47Ohm in 0805 package.",ARROW
+BTS50060-1TEA,ATV_PWT_ENGINE_MANAGEMENT,,AP,,kilis calibration,"customer, MHE requires 3% current sensing in SCR injector. but BTS50060-1TEA sensing accuracy is out of requirement, so calibration is needed in whole VS range in application. document how to do delivered & had a meeting to explain.",DABO
+BCR405UBTS4160DGABTS5180-2EKATLE4253ETLE84106TLE84110EL,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,The case has been business won and closed.,ERAE China placed initial order of Fiat 523 ACM,ERAE China plant starting HVAC controller production for local Chinese version of Fiat 523. Main IFX parts are TLE84110/84106/BTS5180/4160/TLE4253E/BCR405U. Estimating revenue is around 1M USD for life time.,AVNET
+TLE4921-5U,ATV_BODY_DASHBOARD,,AP,"As per the internal structure of, there is a snapback diode at the input of TLE4921-5U with a snapback voltage of <24V. Exceeding 30V at the input would snap back the voltage to 24V and the device needs to be reset to leave snapback. So, snapback will only delay(because of snap to lower voltage) destruction of device in case of larger power dissipation. 
+Also, as per absolute maximum, 24V/200mA of input will have ~5W power dissipation which will burn the device. Hence, an external diode of >=24V is recommended at the input of the device. ",Utility of external clamping diode,Customer wants to optimize on external clamping diode as device already has an internal clamping diode.,ZF
+BTN8982TA,ATV_CHASSIS_ABS/BRAKING,,AP,BTN8982TA cannot meet OEM EMC test spec. IFX not recommend to use too high SR resistor.,BTN8982TA EMC Issue,"BTN8982TA Switching time is fast than BTN7970B.
+OEM EMC test spec is changed(Ver.G -> Ver.K)
+So, BTN8982TA cannot meet OEM EMC test spec.",DENSO
+TLE4927C_E6547,ATV_CHASSIS_ABS/BRAKINGATV_PWT_ENGINE_MANAGEMENTATV_PWT_TRANSMISSION,,AP,,Knoweldge sharing about Ag migration,Ag migration is one of field failure issues of magnetic speed sensor including capacitor components such as TLE4927C. It explains what is the ag migration and How it occurred.,CONTINENTAL
+TLE4946-2K,ATV_BODY_POWER_OPERATED_SYSTEMS_DOOR_MODULE,,AP,provided the data that had been measured earlier. Attaching here for future reference also.,Characterisation data for Is Vs Temp,Customer requested characterization data for TLE4946-2K similar to what is available In the new family of TLE4946.,ARROW
+TLE4964-2M,ATV_BODY_DASHBOARD,,AP,We do not provide reflow temperature profile. But the maximum package temperature of PG-SOT-3-15 is 260degC.,Reflow Soldering Temperature,Customer wants to know reflow soldering profile or the maximum temperature for the package,DABO
+TLE8888QK,ATV_PWT_ENGINE_MANAGEMENT,,AP,"Find root cause, show OEM/TIER about possible root cause. Then provide workaround",Wrong OUTn diagtnosis in PPS,"OEM/TIER found OUTn OL/SCG whenver key on in PPS.
+Due to first design in TIER, OEM doubts TIER's ability to develop.",AVNET
+TLE4921-5U,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,"the leakage current of filter capacitor at higher temperature was understood to be the cause and customer was advised to lower the capacitance from existing 470nF to 220nF(or 100nF if required). 
+But Customer has now found that the epoxy was at fault. The same test at 150degC with a different epoxy does not have missing pulses and duty cycle is also maintained.",Missing pulses at 150degC,Customer is reporting missing output pulses at 150degC in some samples during the 144hour testing at 150degC,ZF
+BTS50060-1TEA,ATV_PWT_ENGINE_MANAGEMENT,,AP,,BTS50060-1TEA SCB/SCG issue,"customer, MHE issued strange waveform when SCB, SCG test.
+visit & measure waveform & explain BTS50060-1TEA is in operation",DENSO
+TLE4941PLUSC,ATV_CHASSIS_ABS/BRAKING,,AP,Provided an excel sheet to the customer with calculations on required over voltage as well impact of external components on output voltage and supply voltage. Please see attached.,schematic for over-voltage endurance @ 40V,Customer wanted recommendations for external components required for passing a specific 40V pulse as per Japanese OEM.,CONTINENTAL
+BTS3110N,ATV_PWT_ENGINE_MANAGEMENT,,AP,Please refer attachment for solution and updates.,Field failure of BTS3110N in ignition control unit in two wheeler,EOS observed at device input section. Please refer attachment for details,ARROW
+BTS3125EJ,ATV_BODY_BODY_CONTROL&MULTIPLEXING,,AP,"Depends on load and ESD model shared by customer, suggested BTS3125EJ device for this application.
+
+-,Use 47nF-68nF capacitor across output to pass direct discharge 8KV ESD (RESD=2K,CESD=330pF) pulse
+-,As customer is using FWD, EAR is not too much concern",Customer reported that they had FAR with HITFET so they need recommnedation for HITFET+ for selection,Customer had failures with HITFET devices therefore they asked Infineon recommendations and device selection for HITFET+. This was critical for us to replace STM device and gain customer confidence with HITFET+.,DABO
+BTS7002-1EPPBTS7004-1EPPBTS7006-1EPPBTS7008-1EPP,ATV_BODY_POWER_DISTRIBUTION,,JAPAN,"BTS700x-1EPP indicates the distinguish from OCSD, dOTSD, aOTSD by the IIS value for debugging purpose._x000D_
+See attached more details.",IIS(FAULT) behavior,"Customer observed 3 levels of IIS(FAULT) in case of overload shutdown._x000D_
+They need to understand why they observed this phenomenon._x000D_
+Please check why customer observed 3 levels of IIS(FAULT) behavior._x000D_
+_x000D_
+",AVNET
+BTS7002-1EPP,ATV_BODY_LIGHTING,,EMEA,"In principle the BTS7002-1EPP will also work like described in the datasheet at Vs=19V. But since the device is speicified until 18V we could not guarantee (fromally) anything above this value._x000D_
+We could ask the customer which Parameters (why?) are the most critical one for him and then have a deeper look at them.  ",Extended Operating voltage range and parameter deviation,"APTIV uses the BTS7002-1EPP for the Ford Trailer module TTLM gen.2. Ford specifies the normal operating voltage range up to 19V. In the data sheet we specify the normal range up to 18V and write ""Parameter deviations possible"" at >18V. They want to know the effected parameters and which deviations they have to take into account for 19V.",ZF
+TLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"[1] The Visio file is almost 100% correct, the only mistake is on the screenshot ""visio_1_error"" I attached.. The first output switch will happens when the signal crosses the zero, and not when the signal crosses the threshold. The second output pulse is correct.  _x000D_
+_x000D_
+[2] When a speed temperature watchdog is triggered, the sensor goes back into uncalibrated mode, BUT the amplitude (and hence also the switching hysteresis) are NOT reset. Please see the attachment ""watchdogs"".",Thermal noise hysterisis and tolerance,"Denso asks question how much is hysterisis of thermal noise._x000D_
+_x000D_
+I discussed with Patricia and she answered to me that the hysterisis is 25% of total amplutude after calibration completion._x000D_
+_x000D_
+I answered this to Denso but they said they couldn't understand clearly._x000D_
+So I prepared timing chart to help them to understand easiliy._x000D_
+_x000D_
+My request for you is to do double check and give me your comment for my confirmation._x000D_
+So could you please check following description and attached visio file,_x000D_
+and give me your comment?_x000D_
+_x000D_
+_x000D_
+[1]Please check ""PWM_Hysterisis1"" sheet._x000D_
+This is my understanding._x000D_
+The point is..._x000D_
+_x000D_
+#When IC detect more than 2 x dBlimit amplitude, the first output pulse comes._x000D_
+#When calibration completes, zerocross point is fixed and also hysterisis is set (25% of full amplitude)_x000D_
+#If the thermal noise excesses this hysterisis, the noise output pulse comes._x000D_
+But infineon totally considered thermal noise effect and decided the spec of hysterisis(25%). Infineon thinks this hysterisis is sufficient to prevent wrong pulse due to thermal noise._x000D_
+(This block diagram is exmaple, so I expresses the noise which excesses hysterisis.)_x000D_
+#If rise edge excesses hysterisis, but fall edge doesn't excess hysterisis, only 1 pulse comes. Otherwise, 2 pulse come._x000D_
+_x000D_
+[2]Please check ""PWM_Hysterisis2"" sheet._x000D_
+This chart expresses the situation what temperature watchdog activetes._x000D_
+This is my understanding._x000D_
+The point is... _x000D_
+_x000D_
+#If temperature change excesses threshold, the IC becomes uncalibrated mode again and search all input signal for full range._x000D_
+#If temperature watchdog activates, the zerocross and hysterisis setting also disappears._x000D_
+So after temperature watchdog happens, the hysterisis for thermal noise is equivalent with dBstartup(2xdBlimit)_x000D_
+As  long as the noise excesses 2xdBlimit amplitude, there's no output due to thermal noise._x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+",NONE
+BTS7004-1EPP,ATV_BODY_POWER_DISTRIBUTION,,JAPAN,See attached file,BTS7004-1EPP Demo board manual,"Customer want to purchase BTS7004-1EPP Demo board._x000D_
+They want to see what is BTS7004-1EPP Demo board in advance._x000D_
+Please show BTS7004-1EPP Demo board manual or document.",ARROW
+BTS7004-1EPP,None,,EMEA,"BTS7004-1EPP is tested driving an E-Load set as current source with a series resistor. The series resistor is beneficial for the output current, especially when increasing the resistor. The resistance range tested goes from 25 mΩ up to 1 Ω. _x000D_
+The E-Load in Resistance Mode is tested. The resistance is chosen in order to guarantee IL = 35 A. The behavior of the output current is the same of Current Mode._x000D_
+_x000D_
+BTS7004-1EPP is tested driving an E-Load set as current source of 35A and 40A with a series resistor._x000D_
+The series resistance range tested goes from 50 mΩ up to 200mΩ. _x000D_
+Thermal simulation during the switch-on and switch-on are performed._x000D_
+For 35A and 40A thermal simulation are performed at 25⁰C and 85⁰C._x000D_
+",Glow Plug Controller GCU5,"Bosch reported malfunction/errors during device calibration and overload test at room temperature and high temperature, when using E-load._x000D_
+_x000D_
+Bosch asked for lab measurements in the following conditions:_x000D_
+-Using a low impedance power resistor in series with the Eload, e.g. 50mOhm;_x000D_
+-Setting the E-load to pull already with V_OUT <2V no current / less current;_x000D_
+-Setting the E-load in the ""Resistance"" mode. Bosch has to make sure that 35A actually flow in as Output current._x000D_
+_x000D_
+Bosch asked for thermal simulations in the following conditions:_x000D_
+-IL = 35A and IL = 40A;_x000D_
+-Rseries = 50m/100m/200m Ohm",DABO
+SAK-TC233L-32F200F_AB,ATV_SAFETY_DRIVER_ASSISTANCE_SYSTEMS,autosar/mcal_MC_ONLY,AP,"Closed as per report attached_x000D_
+",MCAL SPI not able to transmit during Async transmit,"Asynchronous communication of SPI is not working as expected._x000D_
+When 16 byte data transmitted via asynchronous communication, the first byte is put by the DMA to QSPI TXFIFO and DMA TCOUNT (Transfer Count) is getting reduced by 1 count. We are getting the DMA TX ISR successfully._x000D_
+The LAST status Bit is also getting to indicate the successful TX of the first byte, but DMA is unable to start the next byte transfer after the first transfer._x000D_
+_x000D_
+Product selected as A1G as A2G could not be selected_x000D_
+_x000D_
+A2G MCAL Package used by Delphi TCI:_x000D_
+MC-ISAR_AS42x_AURIX2G_TC39xA_BASIC_REL071_V0040_x000D_
+Asynchronous SPI Handler is used by Delphi_x000D_
+OS and other ECU configuration is done using vector DaVinci configurator",AVNET
+SAK-TC233L-32F200F_AB,ATV_SAFETY_AIRBAG/PASSIVE_RESTRAINT_AIRBAG_ECU,asclin/sent_MC_ONLY,AP,Closed as per attached report,MCAL LIN Header error issue ,"2 LIN channels used_x000D_
+Occupant detection system - Channel-1_x000D_
+Seat belt pre tension system - Channel-2_x000D_
+When header error inserted into channel-1 & the same is detected with 90% to 95% accuracy & reported to the application. Some times it is inconsistent & will not be detected._x000D_
+When header error inserted into channel-2, it is not at all detected in the 1st occurrence._x000D_
+When error inserted continuously, some times the 5th occurrence of the error, some times 3rd occurrence or sometimes the 10th occurrence is detected & reported to the application._x000D_
+The error detection behaviour is very inconsistent for this channel.",ZF
+SAK-TC233L-32F200F_AB,ATV_PWT_ENGINE_MANAGEMENT,autosar/mcal_MC_ONLY,AP,Closed as per attached report,MCAL SPI Transmission does not happen completely,"SPI Transmission does not happen completely. DMA and PT interrupt comes before the completion of the whole data (just around the end of the first byte) and CS pin is pulled high. Occasionally complete transmission can be seen, but transmission is incomplete for the most part.",NONE
+SAK-TC233L-32F200F_AB,ATV_CHASSIS_ABS/BRAKING,autosar/mcal_MC_ONLY,AP,Closed as per attachment,"MCAL package ""REL302"" issue with qualification","MCAL release package “REL302” has been integrated at ZF-TRW’s Global A project._x000D_
+IFX Released MCAL patch release package “REL302_MCU_PATCH” for REL302, covering PLL errata and CCUCONx register update_x000D_
+•0000051018-683 Errata PLL_ERAY_TC.001, PLL_TC.005_x000D_
+•0000052363-197 CCUCONx registers update_x000D_
+There is disclaimer in REL302_MCU_PATCH release notes stating “Patch is not recommended to be used for production code”_x000D_
+ZF-TRW needs Production quality of patch package “REL302_MCU_PATCH” to use in production program",ARROW
+SAK-TC233L-32F200F_AB,ATV_CHASSIS_ABS/BRAKING,autosar/mcal_MC_ONLY,AP,Fixed as per report attached,MCAL SPI AS4XX_AURIX_TC23X_AB_PB_BASE_V300 ,"SPI Transmission does not happen completely._x000D_
+If a breakpoint is SET on one of the DMA channel handing the SPI Rx Interrupt, it is observed data transfer happening completely_x000D_
+If a small delay is introduced on the DMA channel handing the SPI Rx Interrupt, it is observed data transfer happening completely",DABO
+TX98-4,None,,AP,Recommendation is to connect NC pins to ground in order to eliminate effect of ESD. floating them can cause an ESD related issue .,NC pins behaviour on TLE984x,what is the behaviour of NC pins not connected in TLE984x ,AVNET
+TX98-4,None,,AP,"Design of motor is not good from customer side with lots if variation on current line, mechanical vibration also adding up to the noise on the current line._x000D_
+comparision done with reference motor and customer motor ._x000D_
+",ADC measurement issue with TLE9879,Customer new design BLDC motor is having issue with ADC measurement for current using T12 Period match to trigger timer3,ZF
+TLE4929C-XAN-M28,ATV_PWT_ENGINE_MANAGEMENT,,GLOBAL,"James printed pdf, did Review and send back the scanned Review._x000D_
+Klaus added document to iSOLAR",Please review the document and make proposals for better English,"Hi James,_x000D_
+Andrea told me to create an iSOLAR-ticket and you will Review my document I plan to share on www._x000D_
+Please use the comment-function to give Feedback. I will rework my document afterwards.",NONE
+BTS7004-1EPP,ATV_BODY_POWER_DISTRIBUTION,,JAPAN,File as attachment,Rds(ON) Production data,"Customer want to refer actual performance of Rds(ON) accuracy. _x000D_
+ They requested to provide some lot's Rds(ON) production data. _x000D_
+ Please provide the flowing parameter data. _x000D_
+Rds(ON)_25_x000D_
+Rds(ON)_150",DABO
+BTS7004-1EPP,ATV_BODY_POWER_DISTRIBUTION,,JAPAN,See attached file,Kilis Production data,"Customer want to refer actual performance of Kilis accuracy._x000D_
+They requested to provide some lot's Kilis production data._x000D_
+Please provide the flowing parameter data._x000D_
+Kilis07_x000D_
+Kilis09_x000D_
+Kilis13_x000D_
+Kilis16_x000D_
+Kilis18",AVNET
+BTS7008-1EPP,ATV_BODY_POWER_DISTRIBUTION,,JAPAN,Errata Sheet available and attached.,Does BTS7008-1EPP ES sample can be used for customer evaluation?,"Customer want to start BTS7008-1EPP evaluation on their PCB._x000D_
+However, we can get ES samples as of today._x000D_
+Does ES sample has any errata or parameter deviations?",ZF
+BTS50010-1TADBTS50015-1TADBTS50020-1TADBTS50025-1TADBTS50025-1TEABTS7002-1EPPBTS7004-1EPPBTS7006-1EPPBTS7008-1EPPBTS7008-2EPP,ATV_BODY_POWER_DISTRIBUTION,,JAPAN,Solder void rate vs Rthja report is attached.,How solder void rate affects for Rthja,"Please provide “Solder voids rate vs Rthja” graph or something alternative._x000D_
+_x000D_
+Some customers are hesitate to use exposed package device._x000D_
+They urged that they cannot observe solder connection at the joint point between PCB and device’s exposed pad._x000D_
+Especially, they aware the possibility of the voids at that solder connection._x000D_
+Datasheet describes Rthja value. They insists that the voids makes more higher Rthja value._x000D_
+The voids at the soldering is customer’s assembly issue. However, we have to encourage to use our products to customers._x000D_
+_x000D_
+To eliminate customer’s awareness, the graph of “Solder void rate vs Rthja” can convince customer that possible voids rate would not affects to Rthja so much._x000D_
+_x000D_
+Thank you for your support.",DABO
+BTN8982TA,None,,JAPAN,This is closed.,Tj conditions of the plots in the ap note,"Question:_x000D_
+Regarding the application note Rev. #0.5 p.43 plots (Figure 35 and Figure 36), would you inform me the temperature range?_x000D_
+Is it from -40°C to 150°C?_x000D_
+_x000D_
+NOTE:_x000D_
+It appears there is no temperature information for the plots._x000D_
+the application is PTG._x000D_
+_x000D_
+Answer: _x000D_
+Yes, it covers the temperature from - 40°C to 150°C._x000D_
+In addition, all switching times are specified from -40°C to 150°C in our new application note. For the moment, it has already been in release loop and will be released soon.",AVNET
+TLE5012B_E1000,ATV_SAFETY_DRIVER_ASSISTANCE_SYSTEMS,,JAPAN,"Hello,_x000D_
+_x000D_
+attached are slides which show the 3 technologies comparing accuracy vs. T._x000D_
+Best Performance should have TMR, but we still will make further improvements in TLE5502. _x000D_
+AMR has only good performance in a fully compensated mode. For 1-point calibration, You see drift over T for AMR which comes from offset drift._x000D_
+  ",MR Sensor Over temperature comparison data,"Hello _x000D_
+_x000D_
+I’m promoting our angle sensor line up to various customers in Japan._x000D_
+_x000D_
+I try to replace from Resolver to MR angle sensor for Motor Position customer. _x000D_
+_x000D_
+Fortunately, IFX has all MT technology._x000D_
+Almost customers asked me the comparison of over temperature data for GMR vs. AMR vs. TMR._x000D_
+_x000D_
+TMR is best technology for over temperature spec, however we do not know how is better TMR than GMR/AMR._x000D_
+Do you have a comparison data of over temperature for 3 MR technologies?_x000D_
+Target : AMR/GMR/TMR_x000D_
+X-axis : Temperature_x000D_
+Y-axis : Residual Angle error_x000D_
+_x000D_
+We have the comparison data with input magnetic field as attached._x000D_
+However, I do not have the over temperature comparison data which almost customer needs._x000D_
+_x000D_
+Thanks for your support._x000D_
+_x000D_
+Best Regards,_x000D_
+T. Kondo_x000D_
+_x000D_
+",ZF
+TLE5046IC-AK-ERRTLE5046IC-AK-LRTLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"The VDD limits specified in datasheet are relative to the voltage between the pins, not the voltage given by the ECU. Please refer to application circuit in page 2. So I do not see any problem.",Correct Understanding for Undervolatage behavior,"Please let me confirm my understanding for undervoltage behavior._x000D_
+Could you please read my following summary and give me your feedback whethey my recognition is correct?_x000D_
+_x000D_
+[1]After power on, IC needs to acheive Vrel threshold to enter normal mode(output becomes Ilogh current)_x000D_
+Until voltage reaches to Vrel, the output current becomes IError._x000D_
+_x000D_
+[2]During power up time, the output current is IError._x000D_
+So the maximum current is 3.8mA._x000D_
+If external RM register value is maximum 50Ohm, there's possibility that 0.19V voltage drop._x000D_
+_x000D_
+[3]That means even if we supply 5.2V to IC, because of that voltage drop, _x000D_
+ the voltage which is suplied to IC becomes 5.01V._x000D_
+If this situation occurs, the IC can't enter normal mode permanently._x000D_
+ So we should inform customer that they should supply at least 5.39V to consider such voltage drop if they use 50Ohm register._x000D_
+_x000D_
+[4]But above case is considering extremly worst case._x000D_
+_x000D_
+Vreset -> 3.5V (worst case)_x000D_
+Vhys -> 1.7V (worst case)_x000D_
+IError -> 3.8mA (Worst case)_x000D_
+_x000D_
+The probability that all worst case happens simultaneously is very low._x000D_
+So 5.39V is very conservative value actually._x000D_
+_x000D_
+[Conclusion]_x000D_
+But as long as there's small possibility,_x000D_
+we should inform to customer to supply more than 5.39V to gurantee correct IC behavior._x000D_
+_x000D_
+_x000D_
+",DABO
+TLE5109A16D_E1210TLE5309D_E1211TLE5501_E0002,ATV_SAFETY_DRIVER_ASSISTANCE_SYSTEMS,,JAPAN,"Hi Takamitsu,_x000D_
+_x000D_
+question 1,2, & 3 can be answered together: _x000D_
+_x000D_
+An angle error can occur at all angles, also on 90°, 180°. Typically, one reason for an angle error is an Offset or Amplitude mismatch of the raw signals (sin / cos) .This results in a periodic angle error which affects the complete output range. _x000D_
+_x000D_
+Question 4:_x000D_
+_x000D_
+Our specification is always +/- max.angle error (symmetric) in our understanding. Min. angle error is not specified.  _x000D_
+",IFX xMR sensor for replacement from resolver,"Hello,_x000D_
+_x000D_
+I visited Melco MG group yesterday._x000D_
+To purpose of visit is to replace from Resolver for Motor Generator to _MR angle sensor._x000D_
+_x000D_
+Melco MG group has never used Semiconductor sensor in past._x000D_
+They’re interested in our solution, but they still have the some simple question about IFX _MR sensor technology._x000D_
+_x000D_
+I summarized their question into the slide set.(4 items)_x000D_
+Please reply back for these 4 topics. _x000D_
+We will keep watching this project continuously._x000D_
+",AVNET
+TLE5046IC-AK-ERR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"[1]: see attachment ""BE SPI interface TLE5046""_x000D_
+[2]: see attachment ""BE_SPI_App_Note_TLE5046_review_6_4_2018.pdf""",BE_SPI interface requirement,"SWS is using Speed evaluation kit to check internal ADC signals._x000D_
+(And they have already succeeded to monitor those signals)_x000D_
+_x000D_
+And they think it's also very useful to check temperature by monitoring to use BE SPI._x000D_
+_x000D_
+Now they are just staring to prapare their test equippment._x000D_
+And they want to implement control of this BE SPI and use this function during their test._x000D_
+_x000D_
+So could you prepare detail information material of BE SPI as same as transmission speed sensor?_x000D_
+(I attach the TLE5028x slide which Patricia provided to me before)_x000D_
+_x000D_
+They require this information until end of this month._x000D_
+But I talked with Simone that this is severe._x000D_
+_x000D_
+So I propose following approach._x000D_
+_x000D_
+[1]Only prepare the information how to control and access BE SPI interface._x000D_
+(Voltage value, timing, etc)_x000D_
+--> end of this month_x000D_
+(The information which is needed for SWS to start building their test equippment)_x000D_
+_x000D_
+[2]Prepare more detail to include the address map, other bit detail, etc.._x000D_
+--> please give me your opinion when you can prepare._x000D_
+     (end of March, etc..)_x000D_
+",ZF
+TLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"1) The value in the table is the one implemented in the design and the one to be considered by the ECU. The 32 came from historical specs value. As you saw the difference is very small. _x000D_
+_x000D_
+2) _x000D_
+- We have a counter on 17 bits -> max value is 131071._x000D_
+- Clock period is 1/8.65e6 = 1.1561e-7s, but the counter counts only 1 time every 64 clock periods_x000D_
+- We have +1 on the counter every 1.1561e-7*64 = 7.39904e-6s_x000D_
+- The number needed to reach 150ms is 150e-3 / 7.39904e-6 = 20272_x000D_
+- 20272 < 131071 so we can manage to count till 150ms_x000D_
+_x000D_
+3) 1 is correct_x000D_
+_x000D_
+4) 1 is correct",Standstill pulse behavior questions,"Denso has 4 questions about Standstill._x000D_
+Could you please help to answer each questions?_x000D_
+_x000D_
+[1]Pulse Width_x000D_
+Datasheet Figure 19 describes ""tstop = 32 x tLR""._x000D_
+32 x tLR(38-45-52us) = 1.216-1.44-1.664ms._x000D_
+_x000D_
+But datasheet Table7 describes 1.232-1.4-1.656ms._x000D_
+Why there's such subtle difference?_x000D_
+(Please check attached ppt page2)_x000D_
+_x000D_
+[2]How do IC control Tstop(150ms) period?_x000D_
+For example, This period is controled by counter inside Chip and _x000D_
+Frequency is 8.65MHz. So there's 1300000 count up._x000D_
+_x000D_
+Denso would like to know how to calculate this long time._x000D_
+(Please check attached ppt page3)_x000D_
+_x000D_
+[3]If the wheel rotate only once a time during standstill, and after that wheel stops revolving again, which is the base point of 150ms calculation, pre-low falling position or DR-R rising position?_x000D_
+(Please check attached ppt page4 and answer me ① or ②)_x000D_
+_x000D_
+[4]In regards with normal pulses(twarning, DR-R, DR-L, etc), first Pre-low period is inserted._x000D_
+In regards with standstill, is it also included in common state machine?(Means before tstop pulse rising, Pre_low period is inserted)_x000D_
+ (Please check attached ppt page5 and answer me ① or ②)_x000D_
+_x000D_
+If there's any unclear points, please let me know._x000D_
+",ARROW
+TLE5046IC-AK-ERR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"Definition:_x000D_
+-Hard error: permanent hardware failure that cannot be recovered_x000D_
+-Soft error: temporary hardware failure that can be recovered, typically caused by a physical particle (e.g. alpha, neutron), passing trough a critical volume of the device_x000D_
+_x000D_
+Effects on the TSR:_x000D_
+If the failure is related a TSR violation, then in case of a hard error the TSR is permanently violated, in case of soft error is violated only temporary and then the sensor recovers its functionality.",Hard Error VS Soft Error ,"Please let me confirm the difference between HardError and SoftError just in case as you explained to me before._x000D_
+_x000D_
+[1]Hard Error_x000D_
+If IC becomes certain FFM(TSR), IC can't recover as long as once a customer resets that._x000D_
+_x000D_
+[2]Soft Error_x000D_
+Even if IC becomes the FFM(TSR), IC recovers by itselfs with some interval spontaneously._x000D_
+_x000D_
+(Example)_x000D_
+#Parmanently, the output pulse number is more than 102%. -> HardError_x000D_
+#Temporary, the output pulse number is more than 102%, but it recovers 100% after a while. -> SoftError_x000D_
+_x000D_
+_x000D_
+Is my recognition correct?_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+",DABO
+TLI4970-D025T4,MULTIPLE,,EMEA,See comment and upload 05/Feb/2018,"Automotive qualification -> TLE4970, conti asks for accuracy","Für den TLE4970-D025T4 hätte Conti jetzt ganz konkrete Fragen, um sämtliche Verwirrungen im Datenblatt zu klären:_x000D_
+•	Beispielrechnung für den Gesamtfehler über Lebensdauer bei 1 A und bei 20A, jeweils für den Tempraturbereich -40°C …+125°C (Temperatur der Lötstellen)._x000D_
+•	Eine Aussicht, wann es denn das TLE Datenblatt gibt._x000D_
+",AVNET
+TLE4955,ATV_PWT_TRANSMISSION,,EMEA,2018_03_09: results of simulations presented to Conti and slides provided,TLE5555 simulation results needed,"As discussed, Conti needed simulation results on TLE5555. Se attachment for details._x000D_
+Update: 31.1.2018:_x000D_
+info to Conti: ""simulation results expected for end february_x000D_
+only one wheel of NAG3 -> iBB top or side read?_x000D_
+no temperate effects implemented -> no temperature drift in stand still""_x000D_
+reply from Conti: top read preferred_x000D_
+",ZF
+TLE5046IC-AK-ERR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,Test finished,Test,Test(Please Ignore),DENSO
+TLE5046IC-AK-ERR,ATV_CHASSIS_ABS/BRAKING,,EMEA,"The following simulations were performed: magnetic frequency from 2.5kHz to 7kHz with a step of 500Hz. Typical temperature and field amplitude (dBx = ca. 4mT), always positive rotation._x000D_
+_x000D_
+These are the results:_x000D_
+-2.5kHz: speed pulse + 2 bits sent_x000D_
+-3kHz: speed pulse + 1 bit sent_x000D_
+-3.5kHz: speed pulse sent completely_x000D_
+-4kHz: speed pulse sent completely_x000D_
+-4.5kHz: speed pulse sent completely_x000D_
+-5kHz: speed pulse sent completely_x000D_
+-5.5kHz: speed pulse sent completely_x000D_
+-6kHz: speed pulse sent completely_x000D_
+-6.5kHz: speed pulse sent completely_x000D_
+-7kHz: only 2*dBlimit speed pulse is sent ",Simulate SystemC TLE5046AK with 4.5kHz,"Simulate / Analyze Impact of Input Frequency min. up to 4.5kHz. Best case, up to a frequency when the protocol (speedpulse) is disrupt._x000D_
+Analyze 6kHz",CONTINENTAL
+BTS50015-1TAD,None,,EMEA,done,test,test,ARROW
+TLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"The protocol generator VHDL module inside our digital core is generating all the timing for the output protocol: the different pulse lengths and the tpre-low time as well. Basically it is a state machine where a counter is counting the time the state machine should stay in a specific state. So to answer your question, yes the generation mechanism is the same.",Denso Pre-Low length question,"Denso has question._x000D_
+_x000D_
+Should they think all pulse length combinations are generated by same algorithm?_x000D_
+  The reason why they ask this question is that they are thinking their test method now, and so far they are planning to measure DR-L/R pulse length._x000D_
+  They recognize that we measure warning pulse length during BE test, so_x000D_
+it is covered by our test._x000D_
+  But they would like to judge whether they also should measure Pre-low length._x000D_
+  If the generation algorithm is quite different with Pre-low and Warning, they think we can't be sure that Pre-low length is no problem even if we measure the warning pulse length._x000D_
+  So this question is coming._x000D_
+  _x000D_
+  If the generation algorithm of Pre-low length is different with that of other pulse length, I need to consider how to answer this question with you._x000D_
+  In this case, I would like to discuss with you how to explain this point to Denso._x000D_
+_x000D_
+  On the other hand, if all pulse width includes pre-low length are generated by common algorithm, I think we can answer as follows to Denso._x000D_
+_x000D_
+ ""we use common algorithm to generate each pulse and Pre-low length( minimum 45us. and other is multiple x2 [90us], x4[180us]....) by digital block._x000D_
+ First we check digital block by scan test. (We can guarantee the digitan algorithm function)_x000D_
+ Second, we only check warning pulse (45us H pulse) at BE test._x000D_
+ This is the narrowest pulse, and if we can monitor this pulse through output pins, the other pulse and Pre-low length are also OK""_x000D_
+_x000D_
+ If possible, I would like to close this question be above answer to Denso._x000D_
+ Could you please give me your comment?_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+ _x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+",
+SAK-TC233L-32F200F_AB,ATV_BODY_POWER_DISTRIBUTION,application lead adas_MC_ONLY,EMEA,closed again,"ZF-test by it 2, dmz to neuron, complex","test by it 2, dmz to neuron, complex_x000D_
+edited description 1",
+SAK-TC233L-32F200F_AB,None,,EMEA,"Test by IT - Please Ignore_x000D_
+ -updated in Neuron 2 -",ZF - Test by IT - Please Ignore - updated,"Test by IT - Please Ignore_x000D_
+- updated - ",ARROW
+TLE4941C,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"The solution is in ""SWS_TLE4941C_Issue_answer_from_AE_to_FAE.pptx """,TLE4941C output current control circuit questions.,"SWS(OEM) is asking questions for the material which we sent on 2013._x000D_
+I think this is very tough question.._x000D_
+_x000D_
+_x000D_
+First, please check attachment._x000D_
+This material is made by previous HQ guy and IFJ QM guy.(But that QM guy has already left Infineon... And Takayuki also doesn't know the detail) _x000D_
+_x000D_
+The HQ guy name is ""Esmark Kai""._x000D_
+_x000D_
+This material explains how does TLE4941C control the output current High (14mA) and Low (7mA) by using 2 MOSFET and Protect Diode._x000D_
+_x000D_
+Maybe Esmark Kai provided circuit picture and explained bahavior to our QM guy and QM guy made this slide._x000D_
+_x000D_
+_x000D_
+SWS is asking some questions for this slide._x000D_
+So could you please try to ask Esmark kai to other expert guy to get the information?_x000D_
+_x000D_
+[1]Page3 lower 2 graphs_x000D_
+This page describes 2 broken case of FET(Q140 and Q196)._x000D_
+They would like to know how does break Q140 and Q196 for the output voltage case1 and case2 respectively._x000D_
+Could you please tell me to use page2 picture how Q140 and Q196 break for these 2 cases?_x000D_
+_x000D_
+[2]Page4 upper graph_x000D_
+They would like to know even if PD breaks, the output voltage keeps normal._x000D_
+This graph looks it keeps normal output, but could you please let us check our understanding is correct?_x000D_
+_x000D_
+[3]Page4 lower leftside graph_x000D_
+They would like to know the behavior of lower leftside graph_x000D_
+""FET(Q140/Q196)&PD are broken simultaneously case1""._x000D_
+_x000D_
+They would like to know this graph means low voltage rises up, so_x000D_
+""High voltage - Low voltage < 0.7V"",_x000D_
+_x000D_
+Or_x000D_
+High voltage becomes lower, so ""High voltage - Low voltage < 0.7V"",_x000D_
+Or_x000D_
+Both voltage chnages, so ""High voltage - Low voltage < 0.7V""._x000D_
+_x000D_
+[4]Are there any possibility that following 2 cases occur because of any failure(FET or Protection Diode or other parts)?_x000D_
+#The only high current level becomes unstable (Out of spec) _x000D_
+ #The only low current level becomes unstable (Out of spec)_x000D_
+_x000D_
+",DABO
+TLE4941C,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"As discussed on the phone TLE4941C has no SASR or FMEDA. _x000D_
+Hence there is no TSRs and FFMs defined for it. _x000D_
+The current levels are stable in the sensor operating range but of course they can become unstable due to random failure in the silicon (this can always happen in all our IC, take 5045/46 as an example). ",The functional failure check of TLE4941C,"SWS asks us the functional failure of TLE4941C._x000D_
+(OEM asks them)_x000D_
+_x000D_
+[1]They would like to know whether there's following functional failure mode._x000D_
+#The only high current level becomes unstable_x000D_
+#The only low current level becomes unstable_x000D_
+_x000D_
+First, do you have SASR of TLE4941C?_x000D_
+If you have, is it possible to share that to me?_x000D_
+If there's above functional failure, those are described in SASR._x000D_
+_x000D_
+If there's no SASR, could you please confirm this question?_x000D_
+_x000D_
+",AVNET
+TLE5028C-XAA-D28,ATV_PWT_ENGINE_MANAGEMENT,,EMEA,"Attached is the Simulink model of TLE5028. _x000D_
+It is based on the original model of Simon Hainz. _x000D_
+The GMR model has been changed to the Stoner Wohlfahrt model. _x000D_
+The parameters of the Stoner Wholfahrt models have been updated together with Armin Satz in order to get the correct By dependence (at By = 5mT the sensitivity should be half). The parameters of the GMR model are also attached for future reference. ",System-C-Model of TLE5028C needed to do simulation including By-influence including Temperature,"Electricfil needs to simulate behaviour of TLE5080 (GM-opportunity)_x000D_
+- back-bias (MFB)_x000D_
+- displacement_x000D_
+- stop-start_x000D_
+- temperature-drift",ZF
+TLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"[1] Yes it is possible to store from the PGSISI to Excel the data coming from one entire wheel revolution. We just made some test on our desk and the PGSISI saved a big amount of data in Excel without problems._x000D_
+[2] I checked with model simulations and concept engineer and the ADC should saturate AFTER the GMR saturates. To be 100% sure I will check also with analog designer, but he is currently sick and not at work._x000D_
+[3] There is only one ADC, both in 5045 and 5046 and this is the tracking ADC. Tracking ADC is a type of ADC, please refer to Wikipedia or other sources to understand how it works._x000D_
+In 5045 the tracking ADC is converting the speed signal, in 5046 the tracking ADC is converting in time-multiplexing the speed, direction and temperature signals. _x000D_
+In the PGSISI SW of 5045 you can read tracking ADC register value (10 bits) and speed ADC (avg) value (13 bits inside the chip). The second is obtained summing up the last 8 values of the tracking ADC register and hence it is on 13 bits. In particular:_x000D_
+•	Tracking ADC: pure value of the tracking ADC register, on 10 bits. To get the value on 13 bits and calculate the sensitivity you have to multiply by a factor of 8 (see slide 8 in your presentation)._x000D_
+•	Speed ADC (avg): sum of the last 8 samples of the tracking ADC register, on 13 bits. Only the 12 MSB bits are read out because this is the maximum number of bit that can be sent in the SPI interface. To get the value on 13 bits and calculate the sensitivity you have to multiply by a factor of 2 (see slide 9 in your presentation)._x000D_
+",Denso internal signal check by EvalKit,"Denso has 1 request._x000D_
+They would like to know how the internal signal works depends on the relationship between IC and encoder._x000D_
+(This is similar demand with Hitachi and Sumitomo)_x000D_
+_x000D_
+I think there’s 2 option to support this demand._x000D_
+_x000D_
+[1]To provide EvalKit and Denso use that and check the internal through BE SPI as same as Hitachi and Sumitomo._x000D_
+[2]Denso lend us their encoder and check the airgap characteristic by Villach lab_x000D_
+_x000D_
+I think [1] is easy way for both side._x000D_
+So I introduced [1] to them._x000D_
+_x000D_
+If the EvalKit function is sufficient for them, they said they would like to use that Evalkit._x000D_
+So they have questions._x000D_
+_x000D_
+[1]Can this IC store ADC values which covers at least 48 poles pair?_x000D_
+  Because they would like to check full signals for 1 rotation._x000D_
+_x000D_
+[2]They would like to know whether internal tracking ADC signal threshold is larger than output of GMR element?_x000D_
+  This question means Denso has concern that even if output of GMR element hasn’t saturated yet, the ADC output saturates first due to the limit of ADC spec._x000D_
+  In this case, they can’t check the maximum actual value of GMR element._x000D_
+  _x000D_
+[3]This is my question._x000D_
+ In regards with attachment which Patricia provided to me when we discussed about Hitachi-Nissan requirement._x000D_
+  Sorry for basic question after such a long time._x000D_
+_x000D_
+  Page 6 describes there’s 2 parameters, Tracking ADC and Speed ADC(avg) for TLE5045._x000D_
+  But there’s no Speed ADC expression in this block diagram._x000D_
+  _x000D_
+   On the other hand, TLE5045 application note Chapter 8 describes the parameter is only Speed ADC signal._x000D_
+   So which one is correct?_x000D_
+_x000D_
+   And in regards with TLE5046, I recognize we can select 2 parameters, Speed ADC signal or Direction ADC signal._x000D_
+   Is this correct?_x000D_
+",DENSO
+TLE4922-XAN-F,None,,AP,"YES, TLE4922-XAN can!_x000D_
+_x000D_
+Important:_x000D_
+ We decided to have two variants on the market:_x000D_
+ XAN for 2-wheeler and lowest cost market_x000D_
+ XIN enabling an application with more demanding temperature profile at little higher cost_x000D_
+ In fact there is the same silicon and the same package used._x000D_
+ The difference: Infineon grants more reliability for XIN-device._x000D_
+_x000D_
+Please be careful in communication to the customer in order to not destroy the better cost-position for the XIN-device._x000D_
+",Overvoltage capabilities of TLE4922-XAN-F,"Customer wants to know if TLE4922-XAN-F can pass the below tests:_x000D_
+_x000D_
+1. 24V for 1 min with a 10Ohm resistor.",CONTINENTAL
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"■SM6 Low airgap warning not available, no activation when needed_x000D_
+   --> correct, covered by FFM8_x000D_
+■SM6 Low airgap warning unwanted activation_x000D_
+   --> correct, covered by FFM9_x000D_
+■OtherSM : SM7/10/11/12/13/14 warning not avaiable, no activation when needed_x000D_
+   --> not correct, if the warning pulse is not available the sensor is not sending warning pulses, then the sensor is not in a safe state -> they are not safe faults_x000D_
+■OtherSM : SM7/10/11/12/13/14 warning unwanted activation_x000D_
+   --> correct, covered by safe faults_x000D_
+■Are there any possibility that normal or standstill pulse becomes warning pulse except for safety mechanism related phenomenon. And if yes, is this failure included in Safety Fault? _x000D_
+ --> Yes it is possible, for example, a failure in the protocol generation could cause a pulse to be shorter and be sent out as a warning pulse (just an example). In any case all possibilities are included in the safe faults, because the result is a warning pulse, which is a safe state for the sensor.",Warning pulse behavior - FMEDA related questions,"I got question from Denso about warning pulse behavior at normal operation and standstill operation._x000D_
+_x000D_
+I summarize warning pulse behavior all cases._x000D_
+(I also refer your comment at ISOLAR237)_x000D_
+_x000D_
+■SM6 Low airgap warning not available, no activation when needed_x000D_
+   --> covers by FFM8 (Both normal and standstill)_x000D_
+■SM6 Low airgap warning unwanted activation_x000D_
+   --> covers by FFM9 (Both normal and standstill)_x000D_
+■OtherSM : SM7/10/11/12/13/14 warning not avaiable, no activation when needed_x000D_
+   --> covers by Safety Fault (Both normal and standstill)_x000D_
+■OtherSM : SM7/10/11/12/13/14 warning unwanted activation_x000D_
+   --> covers by Safety Fault (Both normal and standstill)_x000D_
+_x000D_
+Is my understanding correct?_x000D_
+_x000D_
+And next Denso's question is Additional one._x000D_
+_x000D_
+■Are there any possibility that normal or standstill pulse becomes warning pulse except for safety mechanism related phenomenon._x000D_
+ And if yes, is this failure included in Safety Fault?_x000D_
+_x000D_
+This is complicated point..._x000D_
+",ARROW
+TLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"Answer from Patricia:_x000D_
+_x000D_
+Both the test has been performed, the results are available, to handout an official QPAC please request it via the System.",Gate Leak test requirement,"Denso required the detail of reliability test and conditions._x000D_
+So we released that detail which is included in QPACK._x000D_
+(Please check attached pdf file)_x000D_
+_x000D_
+But they require us 2 items._x000D_
+_x000D_
+[1]There's no E8(Gate Leak test) in this pdf._x000D_
+So Denso requires to provide GateLeak test result._x000D_
+_x000D_
+This test is essential for Denso to approve to use this IC, because_x000D_
+the said previously when they used our competior product, they encountered trouble related to this test. From that, they have defined this test ""must"" ever since._x000D_
+_x000D_
+Could you please check whether you have already had this test result,_x000D_
+and if there's no result, could you please consider to do addtional test?_x000D_
+_x000D_
+_x000D_
+[2]Denso requires addtional condition test for Gate Leak._x000D_
+The standard condition is 400V which is defined by AEC-Q100._x000D_
+_x000D_
+But they also require additonal condition 1000V._x000D_
+They said they also need this test result for approval._x000D_
+_x000D_
+They required this addtional test for TLE4941plusC and Infineon supported this test for TLE4941plusC. Please check attached excel, This is test result summary which Infineon provided to Denso._x000D_
+_x000D_
+So could you also please consider to arrange this additional test?_x000D_
+_x000D_
+_x000D_
+Denso requires us to explain both result at Design Review, so we have approximate 2 month left._x000D_
+_x000D_
+_x000D_
+ _x000D_
+",ARROW
+TLE5046IC-PWM-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"[1] There is no PLL, but a normal oscillator. The clock frequency generated by the oscillator is 8.65MHz (nominal) and can be trimmed with three bits._x000D_
+[2] All the digital circuits use the same clock of point [1], this is the only internal clock signal._x000D_
+[3] The internal voltage domains are as follow:_x000D_
+-analog supply VDDA (normal operation): min = 2.9V, max = 3.1V (if VDDP >3.5V) _x000D_
+-speed GMR bridge voltage (normal operation): min = 2.45V, typ = 2.5V, max = 2.55V (if VDDP >3.5V)_x000D_
+-digital supply voltage VDDD: min = 2.1V, typ = 2.5V, max = 2.7V (if VDDP > 3.5V)_x000D_
+[4] The cutoff frequencies of the filters are: _x000D_
+-speed main path: 31.8kHz (nominal)_x000D_
+-speed comparator path: 15.5kHz (nominal)_x000D_
+-direction path: 31.8kHz (nominal)_x000D_
+_x000D_
+_x000D_
+",Requirement for some internal circuit information ,"Denso requires some internal logic and analog circuit information for their  internal TLE5046iC parts revew on 12/27._x000D_
+_x000D_
+So they require to provide following information until 12/25._x000D_
+THere's 4 questions._x000D_
+If it's hard to answer all of them, could you please provide information which you can find answer easiliy first until 12/25?_x000D_
+_x000D_
+[1]Internal PLL output frequency_x000D_
+_x000D_
+[2]Internal clock frequency for digital circuit (state machine and others)_x000D_
+    -> If there's several clock frequencies, (for example, majority of circuits are drived by PLL output frequency/2, but some few parts(minority parts) are drived by PLL output frequency/4, /8, /16...), is it possible to provide all frequency?_x000D_
+If the number is huge, please only focus on the 3 or 4 majority clock frequncies._x000D_
+_x000D_
+[3]Internal IC's operating voltage._x000D_
+   (I recognize there's voltage regurator and internal circuit's operating voltage is different compared with supply voltage by datasheet)_x000D_
+_x000D_
+[4]Low pass filter cut-off frequency after GMR output._x000D_
+_x000D_
+_x000D_
+",DABO
+TLE5045IC-R050TLE5046IC-AK-LR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,Software updated for PGSISI,PGSISI SW V 1.4.1 for TLE504xiC,Update of PGSISI 3.0  Software v1.4.1 for Evalkit for Engineering puprpose.,AVNET
+TLE5045IC-R100TLE5046IC-AK-LR,None,,EMEA,Solution is in the two attached .zip folders. Please check if the format and the behavior of the models is as expected.,Prepare System C-Model for Bosch incl Dokumentation,"Bosch wants to have the System C Model to analyze Sensor behaviour. Please prepare a bündle incl. Dokumenation for Handout to Bosch._x000D_
+",ZF
+TLE4927C-E6947,None,,EMEA,TLE4927C-E6947 uses the same mold compound as TLE4931.,"TLE4927C-E6947: Customer requests info on mold compound, if other than TLE4931","""_x000D_
+Our database mentions for the TLE 4931 Shin Etsu KMC180-7  for the epoxy _x000D_
+What about TLE 4927-E6947 ? _x000D_
+_x000D_
+Could you please give us table mentionning caracteristic of material if they are different ( strength parameter...)? _x000D_
+We need also the datasheet of these epoxies. Could you please provide it? _x000D_
+_x000D_
+Dr Mustafa BOUDRISSA ""_x000D_
+",DENSO
+TLV4964-5TB,None,application lead adas_MC_ONLY,JAPAN,test done,asdd,awdas,CONTINENTAL
+TLE5046IC-AK-ERRTLE5046IC-AK-LRTLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,Unfortunately the TLE5046iC does not provide programmability of direction of detection definition. We should take this into account for next generation WSS.,The direction output value control by IC side,"All customer is asking that whether this IC can adjust direction definition._x000D_
+Because basically if right wheel IC defines direction Positive equal forward, and Not Positive is backward, the left wheel becomes opposite relation.(direction Positive equal backward, and Not Positive is forward)_x000D_
+_x000D_
+They would like to align both output toward forward and backward respectively._x000D_
+So they would like to know whether IC can support this adjustment by state-of-art functions._x000D_
+_x000D_
+If we can't support this, I will answer so to them._x000D_
+In that case, they will cover that by ECU side.",ARROW
+TLE4931C-N,ATV_PWT_ENGINE_MANAGEMENT,,EMEA,"Re: ATE: number of temperatures _x000D_
+_x000D_
+_x000D_
+Hello Ulli,_x000D_
+Yes, 3 temperatures are used in productive BE test, for all TLE4931 products._x000D_
+BR_x000D_
+Ferdinand_x000D_
+_x000D_
+",TLE4931 ATE: number of temperatures,"""Hello Ulli _x000D_
+Up to now, we think that your EoL tester (ATE) still use 3 temperatures for check TLE4931 in production _x000D_
+Could you please confirm that no temperature removed? _x000D_
+Thanks in advance _x000D_
+Yours, _x000D_
+Dr Mustafa BOUDRISSA _x000D_
+""",ARROW
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"Case1 of your Visio file is the correct behavior: ""even if the standstill pulse hasn't finished yet, the pulse is terminated and normal pulse starts to coming when the wheel re-starts rotating again."" _x000D_
+_x000D_
+So when there is a new zero crossing event due to the wheel rotation, the current is forced to IL for a time Tprelow and then goes to IM level for a time depending on direction of rotation and airgap._x000D_
+_x000D_
+",The behavior of Standstill pluse H period when wheel rotate again,"Denso(TOYOTA) needs to know the standstill behabior ASAP._x000D_
+So could you please help to confirm the correct behavior?_x000D_
+They hope to get the answer today(11/29)_x000D_
+_x000D_
+_x000D_
+They would like to know if wheel re-starts to rotate again during standstill H pulse is outputting._x000D_
+_x000D_
+I prepare visio exaple._x000D_
+Which case is correct, case1 or case2?_x000D_
+_x000D_
+Case1 : Even if the standstill pulse hasn't finished yet, the pulse is terminated and normal pulse starts to coming when the wheel re-starts rotating again._x000D_
+_x000D_
+Case2 : Even if the wheel re-starts rotating again, until standstill H pulse finishes, the rotation normal pulse doesn't reflect for the output current._x000D_
+_x000D_
+ ",DABO
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"■A_x000D_
+Both H and L level of the current are considered._x000D_
+■B_x000D_
+The failure can happen in both the cases, same as ""A"". _x000D_
+■C_x000D_
+[1] shares some common failure with FFM4, not with FFM7. Moreover shares some common failures with FFM10, FFM11, FFM12, FFM9, FFM18, FFM19, FFM30, FFM31, FFM32._x000D_
+[2] is independent from both FFM4 anf FFM7 but share a common failure with FFM11 and FFM2._x000D_
+Update: We calculated the FIT rate for four new functional failure modes. For doing this we do not care about the other FFMs (the one already existing). Now let's take [1] as an example. We says that [1] shares some common failure modes with FFM4, but this does not mean that the individual FIT of [1] or FFM4 need to decrease. In case we had a FFMx given by FFMx = [1] + FFM4, then the overlapping of the common failure modes would be taken into account and the FIT of FFMx would be smaller than the sum of FIT from [1] and FFM4, but this is not the case. _x000D_
+■D_x000D_
+You can upload the picture when you have prepared it._x000D_
+■E_x000D_
+[1] and [2] FIT rate are only Hard Error FIT rate. _x000D_
+■F_x000D_
+As explained in answer ""E"", [1] and [2] FIT rates are only Hard Error, there is not really an assumption behind, this comes from FMEDA calculation directly and our failure catalogs._x000D_
+Update: Each module (example: oscillator, current modulator, ADC...) has some possible failure modes that come from our failure catalog and expert judgment. Each of this failure can either be a hard error (permanent) or soft error (temporary). When we calculated the FIT of [1] and [2] in the FMEDA we found out that the failure modes that are related to [1] and [2] are only hard error and that's why we say that they have only hard error FIT associated (and no soft error)._x000D_
+■G_x000D_
+We have to discuss and schedule with Marketing and PJM --> we will update you as soon as possible. ",New TSR FIT Calculation additional quesitons,"I got addtional question and requirement toward ISOLAR-237 from Denso.... Very sensitive._x000D_
+_x000D_
+[1]The amplitude level becomes 3.8mA-5.95mA (One moment or parmanently) _x000D_
+[2]The amplitude level becomes IError state although the status isn't error (One moment or parmanently) _x000D_
+[3]EL pulse doesn't work although the status is pre-warning. _x000D_
+[4]EL pulse works although the status is not pre-warning. _x000D_
+_x000D_
+■A_x000D_
+ For the new TSR [1]""The amplitude level becomes 3.8mA-5.95mA (One moment or parmanently) ""_x000D_
+They would like to know we consider only pulse L level enter this area, or also consider the both H level and L level enter this area._x000D_
+ -->I assume former one is correct, can you prepare appropriate answer?_x000D_
+_x000D_
+■B_x000D_
+ Same question with ■A for new TSR [2]""The amplitude level becomes IError state although the status isn't error (One moment or parmanently) ""_x000D_
+ -->How about for [2]?_x000D_
+_x000D_
+■C_x000D_
+ FFM4 and FFM7 is ""no pulse"" FFM._x000D_
+ Denso would like to know whether parts of [1] and [2] are covered(duplicated) by FFM4 or FFM7._x000D_
+ -->There's no duplicate, right?_x000D_
+_x000D_
+■D_x000D_
+ They require us to prepare the picture for [1]/[2]._x000D_
+ --> I will try to draw the picture, so please check it when I finish it._x000D_
+_x000D_
+■E_x000D_
+ They require to devide the FIT rate for ""One moment phenomenon"" or ""Permanently phenomenon"" for TSR [1] and [2]._x000D_
+ -->Is it possible to divide such difference?_x000D_
+ -->If it's difficult, please let me know._x000D_
+_x000D_
+■F_x000D_
+ They would like to know current assumpt FIT rate is onlt Hard Error FIT rate ot Hard + Soft Error FIT rate._x000D_
+ -->Can you prepare the answer?_x000D_
+_x000D_
+■G_x000D_
+ They would like to know more accurate release schedule._x000D_
+ -->So far I informed them that we would prepare that after 2018/Jan._x000D_
+ -->If I answer until 2018/1/31, is it sufficient margin for you? Or insufficient?_x000D_
+_x000D_
+Sorry for lots addtional questions._x000D_
+",AVNET
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"The described case 3 is not a realistic case. _x000D_
+We can have 60-40-60-40.... but not 60-60-40-40-60-60..._x000D_
+For a good target wheel, where North and South poles have always the same length, the sum of a period must be 100 (40-60 or 60-40 for example, depending on the offset of the signal). You can have consecutive 60-60 (or 40-40) due to external phenomena (airgap jump for example) but just for two successive pulses, then again 40-60 is alternating: example 40-60-40-60-60-40-60-40-60..._x000D_
+So the message for Denso is that we do not see realistic application scenarios where this phenomena (60-60-40-40...) is happening and if they calculate the speed based on the period length, then the calculated speed is right._x000D_
+_x000D_
+Update of the solution to make it more clear:  Either is 40-60-40-60-40-60... or 60-40-60-40-60-40... It can happen that due to an expected events it changes from 40-60 to 60-40 over a period but then this would affect only two consecutive pulses and have something like 40-60-40-60-60-40-60-40 or 60-40-60-40-40-60-40-60, but alternating of 40-60-60-40-40-60-60-40 is not possible (it would mean that either the offset of the signal jump from positive to negative for each magnetic period, or that the design of the target wheel is really bad/strange). So basically the calculated speed based on a whole magnetic period (60-40 or 40-60) is always correct and it could be deviated only for this one period where you have an unexpected situation like an airgap jump.",The duty spec related to speed accuracy ,"Simone, I discussed with Patricia last week, but I haven't became clear, and she is still business trip now, so could you please help to support this topic?_x000D_
+_x000D_
+Denso asked us about Duty spec 40:60 whether this 40:60 relationship is always fixed, or there's possibility that following situation occurrs._x000D_
+   40:60 -> 60:40 -> 40:60_x000D_
+_x000D_
+Please check the attached visio file._x000D_
+_x000D_
+I drew total 3 example cases for TLE5045 and TL5046-PWM respectively._x000D_
+In regards with TLE5045, even if the duty relationship becomes any combination, ECU only detects rise edge of pulse to calculate wheel speed._x000D_
+So there's no problem._x000D_
+_x000D_
+Next, please check TLE5046-PWM's 3 cases._x000D_
+For this interface, first, there's several combinations to detect rise edge and calculate the speed by ECU._x000D_
+Case1 and Case2 is no problem, but if we consider Case3, the there's maximum 20% error from original speed._x000D_
+If the speed is fast, this 20% is not big impact, but if the speed is slow, this 20% affects not small. So Denso is worried about this point._x000D_
+_x000D_
+Denso asked whether TLE5046-PWM only occurs this visio's case2 only._x000D_
+For this point, I recognize Patricia gave me comment that there's also possibility that case3 occurs._x000D_
+But this is still within duty spec.  So we don't violate datasheet spec._x000D_
+_x000D_
+Certainly, we need to consider same point for AK interface._x000D_
+But Daimler AK specification also defines Duty 40:60 and there's no warning description for this point._x000D_
+_x000D_
+So could you please let me confirm IFX's opinion is such like this?_x000D_
+""There's also possiblity that 40:60 -> 60:40 -> 40:60 case occurs._x000D_
+But IFX recognizes +/20% speed inaccuracy doesn't matter""_x000D_
+_x000D_
+If my assumeption is not correct, and you have different conclusion, could you please advice me??_x000D_
+_x000D_
+_x000D_
+_x000D_
+  ",ZF
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,The solution is in the attached PowerPoint. If you have any question please let us know. ,Standstill_Twarning,"I saw the Korea Region Update during E1/E2 training._x000D_
+There's the information sharing that if the IC enters standstill mode wiht twarning condition, the standstill pulse width becomes 45us(typ) and only time period keeps 200ms._x000D_
+_x000D_
+There's no description in datasheet so Denso can't understand this behavior._x000D_
+I think it's better to share this information with Denso in such early stage to avoid serious trouble in future._x000D_
+_x000D_
+So is it please provide us the detail summary slides which you prepared for Korea Tier1 customer?_x000D_
+_x000D_
+",DENSO
+SAK-TC397XR-256F300S,None,,EMEA,1234,ZF-test 4 by it please ignore,test 4 by it please ignore,CONTINENTAL
+SAK-TC233L-32F200F_AB,None,,JAPAN,measures1,ZF-test 3 by IT please ignore,test 3 by IT please ignore,ARROW
+SAK-TC397XR-256F300STEST_LAT3_(ES),None,autosar/mcal_MC_ONLY,EMEA,check measures,"ZF-test by IT 2, please ignore this issue","test by IT 2, please ignore this issue.",ARROW
+SAK-TC223L-16F200F_ABSAK-TC233L-32F200F_AB,ATV_BODY_POWER_DISTRIBUTIONATV_CHASSIS_CHASSIS_CONTROL,"application framework_MC_ONLY, application lead adas_MC_ONLY",APJAPAN,MSU 3,ZF-Test by IT - please ignore,Test by IT - please ignore,DABO
+SAK-TC233L-32F200F_AB,None,,AP,"done_x000D_
+--sync back_x000D_
+- second round",ZF-IT sync test after iSOLAR Prod upgrade,IT sync test after iSOLAR Prod upgrade,AVNET
+TLE5046IC-AK-LR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"1) Exactly, if the jump is out of specs and the signal amplitude changes of more than 50%, then the direction algorithm does not work anymore till the amplitude is properly updated (but as you know it is digitally filtered and it takes some time...). The continuous direction toggling 0->1->0->1 is due to the fact that the difference between two consecutive direction samples is smaller than the 50% of the direction signal amplitude (which being filtered is still too big compared with the actual signal) and this is interpreted as a change of direction. We discussed this already, I attach the pptx we sent you that time._x000D_
+_x000D_
+2) The LM bits change according to the value of the differential magnetic field (see the attached picture taken from the application note). As for question 1, you should take into account that the speed signal amplitude is filtered and some magnetic events are needed to properly update the amplitude (this means, if the airgap suddenly changes, this is not immediately reflected in the LM bits). When the measured amplitude is bigger than one of the thresholds (proportional to dBlimit), then the LM bits are updated. Moreover, it should be taken into account that the field amplitude of magnetic encoder wheel changes exponentially with the airgap (and not linearly). So a change in the airgap of 1mm (just as an example) can have a different impact on the field (and hence on the LM bits) depending on the starting airgap and the ending airgap (see the Bx field graph of one of our target wheels as an example).",The TLE5046iC-AK-LR behavior by Kjump spec violation,"Hitachi is trying to verify the IC by using PGSISI kit._x000D_
+_x000D_
+They intentionally changes the airgap during normal operation._x000D_
+And they found following behaivor._x000D_
+_x000D_
+Kjump spec -> 60%-200%_x000D_
+_x000D_
+First they changed 100% -> less than 50%, and they found the AK DR bit changed 0->1->0-1>..... repeatedly approx. 10 times._x000D_
+I have already understood, if the IC violates Kjump spec, IC can't detect correct direction any more, so this phenomenon is maybe explainable._x000D_
+Could you please give me your opinion?_x000D_
+_x000D_
+Second, they found although they changed the airgap dramatically, the AK LM bit didnt reflect this change._x000D_
+Is it also within your expectation?_x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+",ZF
+TLE5046IC-AK-LR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"From the description of the phenomenon it seems clearly that the signal watchdog is activated. We should know more details about their test configuration, but if they move the wheel back and forth, depending on the amplitude of the movement it is possible that one channel is generating events and the other no and that the signal watchdog is activated. So I would say that your explanation makes a lot of sense. I attach the pptx that explains the watchdog concepts, where also the signal watchdog is explained (moreover you can use the explanation in the App Note). You can use this to explain the concept to Hitachi, if you think it is important for them to understand. You can ""sell it"" as a good sensor feature that improve the safety concept (crosscheck of the direction and speed signals avoiding deadlock and stuck at states) and reset the chip to a known status in case of misbehavior. Probably the scenario Hitachi is measuring is like a vibration scenario, where the wheel makes small movements back and forth.",Unexpected reset behavior ,"Now Hitachi is trying some verification by using our PGSISI kit._x000D_
+_x000D_
+To check whether the DR bit immediately change when the direction changes,_x000D_
+they manipulate their encoder wheel._x000D_
+But they found strange phenomenon._x000D_
+_x000D_
+After calibration finishes, and direction becomes valid,_x000D_
+they tried to change the rotation direction first._x000D_
+After that, when they found the AK DR bit change, they immediately changes the direction again, and next they also found the AK DR bit change, the again immediately changes the direction._x000D_
+They do this manipulation repeatedly._x000D_
+_x000D_
+But, after several times changes, they found following phenomenon._x000D_
+_x000D_
+SLM and GDR bits are automatically cleared. (Mean automatically reset and move to uncalibrted mode)_x000D_
+_x000D_
+_x000D_
+I came up with 1 possibility._x000D_
+Hitachi changes the direction when they found the DR bit changes._x000D_
+If this change timing is earliar than next direction signal detect point (90degree later), IC can't detect direction siganl permanently._x000D_
+_x000D_
+In such situation, IC has misunderstanding that the direction signal detection has some trouble and activates signal watchdog function._x000D_
+_x000D_
+So I have already asked 2 questions to Hitachi._x000D_
+_x000D_
+[1]Did they change the direction before arriving at next direction detection angle(90degree later)?_x000D_
+-> But they said they don't know how much angle they wait before direction change because they didn't monitor internal behavior._x000D_
+_x000D_
+[2]The reset timing is after 6 or 7 times change?_x000D_
+->They remember maybe 6 or 7 times, but they said they need to check again._x000D_
+_x000D_
+_x000D_
+At this time, if you have any idea for the reason why such phenomenon ocurred, it's helpful to give me the advice._x000D_
+_x000D_
+_x000D_
+_x000D_
+_x000D_
+",DENSO
+TLE5046IC-PWM-R050,ATV_CHASSIS_ABS/BRAKING,,JAPAN,done - documentation prepared,ADC Read Out - BE SPI Test mode for HML,Description of BE SPI Interface of ABS sensors is needed to Support HML/Nissan,CONTINENTAL
+TLE5046IC-AK-LR,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"The solution is in the attached powerpoint ""startup_input_output_hitachi_tle5046ic_measurements""",The first input/output measurement data requirement from Nissan through HITACHI_METAL,"Nissan discussed internally and changed their mind to consider Hitachi metal as sensor supplier candidate for their gigantic project._x000D_
+_x000D_
+But to do selection, Nissan requires Hitachi metal to submit the input/output wave of mesurement result which can check the relationship between input and output within same time frame._x000D_
+_x000D_
+The main purpose is to grasp our IC's start up behavior and confirm how to modify their software._x000D_
+_x000D_
+They require all combinations for calibration number 3/4 and direction detection number 3/5 and direction L/R. (Total 8 cases)_x000D_
+_x000D_
+Please check attachment._x000D_
+Nissan requires such waveform of ""measurement""_x000D_
+_x000D_
+I negotiate to prepare simulation result, but NIssan needs real measurement result._x000D_
+_x000D_
+So I have question._x000D_
+_x000D_
+Have you already had such measurement result?_x000D_
+If you done't have, can you measure it by your lab and prepare the data newly?_x000D_
+_x000D_
+This is very urgent requirement, so I would like to know whether you can prepare or not, and whether you can provide or not and if possible when you can be ready to release._x000D_
+_x000D_
+_x000D_
+",ARROW
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"I copy in the solution the answers from Patricia:_x000D_
+_x000D_
+1) _x000D_
+see attached slides_x000D_
+_x000D_
+2)_x000D_
+idd -->Initial current consumption test_x000D_
+I_low -->Supply current 7mA - during static output_x000D_
+I_High -->Supply current 14mA - during static output_x000D_
+I_Error -->Supply current 3.5mA - @ Voff_x000D_
+I_ratio high/low -->Calculated ratio of supply current levels_x000D_
+slew rate rise high/low -->Output current slew rate 7mA --> 14 mA_x000D_
+slew rate fall high/low -->Output current slew rate 14mA --> 7 mA_x000D_
+duty cycle BIST -->Duty cycle of the squared wave resulting as output on the current Interface _x000D_
+dB_limit -->Air gap capability_x000D_
+external reset -->external reset voltages are datalogged on rising and falling ramp, and hysteresis is calculated_x000D_
+Clock check -->Verification of safety mechanism in case of clock signal frequency is below the limit during normal operation_x000D_
+Undervoltage detection-->The output current is measured with a supply voltage smaller than reset threshold_x000D_
+PWM-Protocol 45µsec pulse-->Length of Warning pulse_x000D_
+µBreak-->Register retention time in case of vdd-continuity interruption",FE/BE test contents question,"Denso requires 2 topics._x000D_
+_x000D_
+■1_x000D_
+Denso requires to provide the detail of our FE/BE test contents because they are considering their test method._x000D_
+_x000D_
+Previously you gave us the attachment for SWS._x000D_
+But the table(p3) is for AK protocol products._x000D_
+_x000D_
+Is this table also same for PWM prptocol products?_x000D_
+Or are there any different test for PWM one?_x000D_
+If PWM product has additional test, could you please prepare same table for that?_x000D_
+Otherwise, could you please remove ""AK-Protocol after detection"" and ""AK-Protocol bit length"" columns and give me the updated table?_x000D_
+_x000D_
+■2_x000D_
+Next, they would like to know how to mesure for each item._x000D_
+Is it possible to add supplemental explanation for each test items?_x000D_
+_x000D_
+(example)_x000D_
+・Idd -> Supply voltage to IC and measure the current without IC power up._x000D_
+・I_low/I_high/I_min -> add fixed stable magnetic input by coil and monitor the output current ampritude._x000D_
+・I_Error -> To enter one of Error state (Low voltage ot something) and monitor the output current._x000D_
+・DB_limit -> Not apply magnetic signal, To supply voltage and check the sensitivity and calculate the dB_limit._x000D_
+_x000D_
+I hope the answer for ■1 first until 11/9._x000D_
+In regards with ■2, after ■1, please let us discuss how to answer._x000D_
+_x000D_
+",ARROW
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"I spoke with the technology expert Armin Satz. He explained me that the requirement (1m @85°C) were given by our lead customer Conti. The specification from Conti are related to the worst case condition in their magnetization process, which actually is not needed for TLE5045iC/46iC but is given as general specification for speed sensors (during assembly process similar situation can happen). So we measured only in that worst case condition and we passed the test -> no data is available right now for higher temperatures. _x000D_
+_x000D_
+We are not sure at the moment how much effort would be required from our side to repeat the measure but it seems not so easy (because the measurement were done on GMR samples and not IC sample and they were run in Munich, not in Villach). I attach the max-rating powerpoint report that can be useful for you as a reference. _x000D_
+_x000D_
+Because if Denso is worried about this happening in the application I would say this is not a critical topic and Denso could understand this without need of measurement results. I understand that the temperature can be higher than 85 degree in the application, but the sensor would never see a high field capable to damage it. Even for very small airgaps (0.35 mm) the field is not greater than 50/60mT (check the attachment as a reference, this refers to out target wheel JT65 #55). Moreover, with high temperatures the magnetic field of the wheel becomes weaker. Assuming -0.2%/K, at highest temperature of 190 degree the field would be less than 40mT. This is the saturation range of our GMRs and I do not see it as a critical value that could compromize their behavior permanently. _x000D_
+In case of assembly process this depend on the step Denso is doing, but since there is no need of magnetization step we do not expect that they can apply such a high field together with high temperature._x000D_
+_x000D_
+Regarding Bx and Bz, it depends on the design of the magnetic encoder, but as a rule of thumb you can assume that the amplitudes of Bx and Bz are comparable, while By is much smaller (for y=0 and no tilting)._x000D_
+_x000D_
+At approximately 40mT, the GMR elements are safe.",Denso question --temperature dependance for magnetic flux of absolute maximum ratings,"Denso gave us question for magnetic flux values by several temperature. _x000D_
+_x000D_
+Currently there’re attached spec in datasheet. _x000D_
+_x000D_
+They would like to know additional 2 specs for Bx, By and Bz by 2 another temperature cases respectively._x000D_
+_x000D_
+Max. 1min @ TA <=120 degree_x000D_
+Max. 1min @ TA <=140 degree_x000D_
+",DABO
+TLE5046IC-PWME-R100,ATV_CHASSIS_ABS/BRAKING,,JAPAN,"The magnetic operating range (-25mT to 25mT) is not temperature dependent and it is valid in all the temperature range. _x000D_
+In the datasheet it is written that the test was performed at 25°C just because the magnetic encoder magnetic field is temperature dependent and if we would repeat the test for different temperatures we should continuously adjust the airgap to get the same field amplitude (this is not practical). So the important values of these specifications are -25mT / 25mT, valid in all the temperature range. ",Denso question --temperature dependance for magnetic induction of operating range,"Denso gave us question for magnetic induction values by several temperature._x000D_
+_x000D_
+Currently there’re attached spec in datasheet._x000D_
+_x000D_
+They would like to know the spec for following 4 cases toward Bx and Bz._x000D_
+_x000D_
+TJ=-40 degree_x000D_
+TJ= 25 degree_x000D_
+TJ= 120 degree_x000D_
+TJ= 140 degree_x000D_
+_x000D_
+_x000D_
+",AVNET
+TLE5014C16D,ATV_CHASSIS_STEERING,,AMERICAS,For the TLE5014 as it is right now we can not add IIF. I have the intention to add IIF in the new TLE5014U which will have an UART interface and alternatively IIF and a SENT/SPC channel in parallel. Optional also IIF and SPI is possible.,Can the IIF interface be implemented in the TLE5014,"Customer requires both SPI and the IIF, Incremental Interface, for the motor control function of their EPAS system. _x000D_
+_x000D_
+Can IIF be added to the TLE5014",ZF
+TLE4998S8D,ATV_CHASSIS_STEERING,,AP,See attached 201710_TLE4998_LGIT_INL_Noise.pdf,TLE4998: temperature behavior of INL & Noise ,"Would you please help on the follwoig request from customer _x000D_
+_x000D_
+1.	Relationship between  Noise/INL   and temperature_x000D_
+2.	How can IFX define INL/Noise specification( base on which criteria )_x000D_
+3.	IFX explained the INL behavier dedepd on spread of Current soruce block of DAC  before , LG want to know the detail root cause which make the spread of Current soruce block_x000D_
+_x000D_
+",DENSO
+SAK-TC223L-16F200F_AB,None,application lead communication_MC_ONLY,EMEA,my solution in the picture,ZF-TEST EMEA 2 : assign to IFX,full loop,CONTINENTAL
+,,,,,,,
+Created at 24/Apr/2018 11:38 AM by Rathinavelu Nandini (IFAP IT DSA RD) with Better Excel Plugin for JIRA,,,,,,,
+help »,,,,,,,
